@@ -15,7 +15,7 @@
 
             <LinearLayout
                 android:layout_width="60dp"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -31,7 +31,7 @@
                     android:id="@+id/imageViewFutCardClub"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="40dp"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_marginTop="8dp"/>
 
                 <ImageView
@@ -61,7 +61,7 @@
                 <ImageView
                     android:id="@+id/imageViewFutCardPhoto"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="15dp"
                     android:layout_width="80dp"
                     android:layout_height="100dp" />
 

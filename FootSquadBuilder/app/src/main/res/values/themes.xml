@@ -13,14 +13,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+
     <style name="FutCard">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="cardBackgroundColor">@color/cardPlayer</item>
         <item name="cardCornerRadius">15dp</item>
-        <item name="cardElevation">5dp</item>
+        <item name="cardElevation">2dp</item>
         <item name="cardUseCompatPadding">true</item>
     </style>
+
     <style name="FutCardList">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -29,4 +33,13 @@
         <item name="cardElevation">5dp</item>
         <item name="cardUseCompatPadding">true</item>
     </style>
+
+    <style name="Theme.FootSquadBuilder.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FootSquadBuilder.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FootSquadBuilder.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

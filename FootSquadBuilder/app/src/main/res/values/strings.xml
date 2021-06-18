@@ -3,4 +3,20 @@
     <string name="fut_card_name">Nazwisko</string>
     <string name="fut_card_position">Poz</string>
     <string name="fut_card_score">Ocena</string>
+    <string name="title_activity_home">Home_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="about">O programie</string>
+    <string name="formacja121">Formacja 1-2-1</string>
+    <string name="formacja112">Formacja 1-1-2</string>
+    <string name="formacja211">Formacja 2-1-1</string>
 </resources>

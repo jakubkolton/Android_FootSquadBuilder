@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_formacja121"
+        android:title="@string/formacja121" />
+    <item
+        android:id="@+id/nav_formacja112"
+        android:title="@string/formacja112" />
+    <item
+        android:id="@+id/nav_formacja211"
+        android:title="@string/formacja211" />
+
+</menu>
+
+
