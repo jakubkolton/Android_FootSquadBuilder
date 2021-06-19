@@ -34,6 +34,16 @@
         <item name="cardUseCompatPadding">true</item>
     </style>
 
+    <style name="FootSquadBuilder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/cardPlayer</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">20dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">10dp</item>
+    </style>
+
     <style name="Theme.FootSquadBuilder.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
