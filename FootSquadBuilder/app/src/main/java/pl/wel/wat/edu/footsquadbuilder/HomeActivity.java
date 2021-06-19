@@ -51,16 +51,15 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 drawer.closeDrawer(GravityCompat.START);
-                // tutaj pisze się intedy (tosty na intenty zmienić)
                 int id = item.getItemId();
                 if (id == R.id.nav_formacja121) {
                     startActivity(new Intent(HomeActivity.this, Formation_1_2_1_Activity.class));
                 }
                 if (id == R.id.nav_formacja112) {
-                    Toast.makeText(HomeActivity.this, "Formacja 1 1 2", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(HomeActivity.this, Formation_1_1_2_Activity.class));
                 }
                 if (id == R.id.nav_formacja211) {
-                    Toast.makeText(HomeActivity.this, "Formacja 2 1 1", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(HomeActivity.this, Formation_2_1_1_Activity.class));
                 }
                 return true;
             }
