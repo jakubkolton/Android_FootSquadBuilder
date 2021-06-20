@@ -1,0 +1,902 @@
+[
+  {
+    "id": "1",
+    "name": "Alisson",
+    "position": "1",
+    "nationality": "Brazylia",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "rating": "89"
+  },
+  {
+    "id": "2",
+    "name": "Ederson",
+    "position": "1",
+    "nationality": "Brazylia",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "88"
+  },
+  {
+    "id": "3",
+    "name": "Lloris",
+    "position": "1",
+    "nationality": "Francja",
+    "league": "Premier League",
+    "club": "Tottenham Hotspur",
+    "rating": "87"
+  },
+  {
+    "id": "4",
+    "name": "De Gea",
+    "position": "1",
+    "nationality": "Hiszpania",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "rating": "86"
+  },
+  {
+    "id": "5",
+    "name": "Schmeichel",
+    "position": "1",
+    "nationality": "Dania",
+    "league": "Premier League",
+    "club": "Leicester City",
+    "rating": "85"
+  },
+  {
+    "id": "6",
+    "name": "Neuer",
+    "position": "1",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "90"
+  },
+  {
+    "id": "7",
+    "name": "Gulacsi",
+    "position": "1",
+    "nationality": "W璕ry",
+    "league": "Bundesliga",
+    "club": "RB Leipzig",
+    "rating": "85"
+  },
+  {
+    "id": "8",
+    "name": "Casteels",
+    "position": "1",
+    "nationality": "Belgia",
+    "league": "Bundesliga",
+    "club": "Vfl Wolfsburg",
+    "rating": "85"
+  },
+  {
+    "id": "9",
+    "name": "Sommer",
+    "position": "1",
+    "nationality": "Szwajcaria",
+    "league": "Bundesliga",
+    "club": "Borussia M'gladbach",
+    "rating": "83"
+  },
+  {
+    "id": "10",
+    "name": "Trapp",
+    "position": "1",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Eintracht Frankfurt",
+    "rating": "83"
+  },
+  {
+    "id": "11",
+    "name": "Oblak ",
+    "position": "1",
+    "nationality": "S這wenia",
+    "league": "Primera Division",
+    "club": "Atletico",
+    "rating": "91"
+  },
+  {
+    "id": "12",
+    "name": "Stegen",
+    "position": "1",
+    "nationality": "Niemiec",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "90"
+  },
+  {
+    "id": "13",
+    "name": "Courtois",
+    "position": "1",
+    "nationality": "Belgia",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "89"
+  },
+  {
+    "id": "14",
+    "name": "Asenjo",
+    "position": "1",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "Villareal",
+    "rating": "82"
+  },
+  {
+    "id": "15",
+    "name": "Neto",
+    "position": "1",
+    "nationality": "Brazylia",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "82"
+  },
+  {
+    "id": "16",
+    "name": "Lecomte",
+    "position": "1",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "AS Monaco",
+    "rating": "80"
+  },
+  {
+    "id": "17",
+    "name": "Mandanda",
+    "position": "1",
+    "nationality": "Kongo",
+    "league": "Ligue 1",
+    "club": "Olympique de Marsille",
+    "rating": "82"
+  },
+  {
+    "id": "18",
+    "name": "Maignan",
+    "position": "1",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "LOSC Lille",
+    "rating": "83"
+  },
+  {
+    "id": "19",
+    "name": "Costil",
+    "position": "1",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "Girondins de Bordeaux",
+    "rating": "79"
+  },
+  {
+    "id": "20",
+    "name": "Bernardoni",
+    "position": "1",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "Angers SCO",
+    "rating": "78"
+  },
+  {
+    "id": "21",
+    "name": "Szcz瘰ny",
+    "position": "1",
+    "nationality": "Polska",
+    "league": "Italy Serie A",
+    "club": "Piemonte Calcio",
+    "rating": "87"
+  },
+  {
+    "id": "22",
+    "name": "Handanovic",
+    "position": "1",
+    "nationality": "S這wacja",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "87"
+  },
+  {
+    "id": "23",
+    "name": "Perin",
+    "position": "1",
+    "nationality": "Wlochy",
+    "league": "Italy Serie A",
+    "club": "Genoa",
+    "rating": "82"
+  },
+  {
+    "id": "24",
+    "name": "Buffon",
+    "position": "1",
+    "nationality": "Wlochy",
+    "league": "Italy Serie A",
+    "club": " Piemonte Calcio",
+    "rating": "82"
+  },
+  {
+    "id": "25",
+    "name": "Consigli",
+    "position": "1",
+    "nationality": "Wlochy",
+    "league": "Italy Serie A",
+    "club": "Sassuolo",
+    "rating": "81"
+  },
+  {
+    "id": "26",
+    "name": "Dijk",
+    "position": "2",
+    "nationality": "Holandia",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "rating": "90"
+  },
+  {
+    "id": "27",
+    "name": "Laporte",
+    "position": "2",
+    "nationality": "Hiszpania",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "86"
+  },
+  {
+    "id": "28",
+    "name": "Silva",
+    "position": "2",
+    "nationality": "Brazylia",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "rating": "85"
+  },
+  {
+    "id": "29",
+    "name": "Dias",
+    "position": "2",
+    "nationality": "Portugalia",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "85"
+  },
+  {
+    "id": "30",
+    "name": "Alderweireld",
+    "position": "2",
+    "nationality": "Belgia",
+    "league": "Premier League",
+    "club": "Tottenham Hotspur",
+    "rating": "84"
+  },
+  {
+    "id": "31",
+    "name": "Hummels",
+    "position": "2",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "rating": "87"
+  },
+  {
+    "id": "32",
+    "name": "Boateng",
+    "position": "2",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "84"
+  },
+  {
+    "id": "33",
+    "name": "Alaba",
+    "position": "2",
+    "nationality": "Austria",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "83"
+  },
+  {
+    "id": "34",
+    "name": "Ginter",
+    "position": "2",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Borussia M'gladbach",
+    "rating": "83"
+  },
+  {
+    "id": "35",
+    "name": "Sule",
+    "position": "2",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "82"
+  },
+  {
+    "id": "36",
+    "name": "Ramos",
+    "position": "2",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "89"
+  },
+  {
+    "id": "37",
+    "name": "Pique",
+    "position": "2",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "86"
+  },
+  {
+    "id": "38",
+    "name": "Varene",
+    "position": "2",
+    "nationality": "Francja",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "85"
+  },
+  {
+    "id": "39",
+    "name": "Gimenez",
+    "position": "2",
+    "nationality": "Urugwaj",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "84"
+  },
+  {
+    "id": "40",
+    "name": "Lenglet",
+    "position": "2",
+    "nationality": "Francja",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "83"
+  },
+  {
+    "id": "41",
+    "name": "Koulibaly",
+    "position": "2",
+    "nationality": "Francja",
+    "league": "Italy Serie A",
+    "club": "Napoli",
+    "rating": "88"
+  },
+  {
+    "id": "42",
+    "name": "Chiellini",
+    "position": "2",
+    "nationality": "W這chy",
+    "league": "Italy Serie A",
+    "club": "Piemonte Calcio",
+    "rating": "86"
+  },
+  {
+    "id": "43",
+    "name": "Skriniar",
+    "position": "2",
+    "nationality": "S這wacja",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "86"
+  },
+  {
+    "id": "44",
+    "name": "de Light",
+    "position": "2",
+    "nationality": "Holandia",
+    "league": "Italy Serie A",
+    "club": "Piemonte Calcio",
+    "rating": "85"
+  },
+  {
+    "id": "45",
+    "name": "de Vrij",
+    "position": "2",
+    "nationality": "Holandia",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "85"
+  },
+  {
+    "id": "46",
+    "name": "Marquinhos",
+    "position": "2",
+    "nationality": "Brazylia",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "87"
+  },
+  {
+    "id": "47",
+    "name": "Kimpembe",
+    "position": "2",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "83"
+  },
+  {
+    "id": "48",
+    "name": "Denayer",
+    "position": "2",
+    "nationality": "Belgia",
+    "league": "Ligue 1",
+    "club": " Olympique Lyonnais",
+    "rating": "80"
+  },
+  {
+    "id": "49",
+    "name": "Fonte",
+    "position": "2",
+    "nationality": "Portugalia",
+    "league": "Ligue 1",
+    "club": "LOSC Lille",
+    "rating": "80"
+  },
+  {
+    "id": "50",
+    "name": "Alvaro",
+    "position": "2",
+    "nationality": "Hiszpania",
+    "league": "Ligue 1",
+    "club": "Olympique de Marsille",
+    "rating": "79"
+  },
+  {
+    "id": "51",
+    "name": "Kane",
+    "position": "4",
+    "nationality": "Anglia",
+    "league": "Premier League",
+    "club": "Tottenham Hotspur",
+    "rating": "89"
+  },
+  {
+    "id": "52",
+    "name": "Vardy",
+    "position": "4",
+    "nationality": "Anglia",
+    "league": "Premier League",
+    "club": "Leicester City",
+    "rating": "87"
+  },
+  {
+    "id": "53",
+    "name": "Aguero",
+    "position": "4",
+    "nationality": "Argentyna",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "87"
+  },
+  {
+    "id": "54",
+    "name": "Aubameyang",
+    "position": "4",
+    "nationality": "Francja",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "rating": "85"
+  },
+  {
+    "id": "55",
+    "name": "Werner",
+    "position": "4",
+    "nationality": "Niemiec",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "rating": "84"
+  },
+  {
+    "id": "56",
+    "name": "Lewandowski",
+    "position": "4",
+    "nationality": "Polska",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "92"
+  },
+  {
+    "id": "57",
+    "name": "Haaland",
+    "position": "4",
+    "nationality": "Norwegia",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "rating": "87"
+  },
+  {
+    "id": "58",
+    "name": "Silva",
+    "position": "4",
+    "nationality": "Portugalia",
+    "league": "Bundesliga",
+    "club": "Eintracht Frankfurt",
+    "rating": "84"
+  },
+  {
+    "id": "59",
+    "name": "Kramaric",
+    "position": "4",
+    "nationality": "Chorwacja",
+    "league": "Bundesliga",
+    "club": "Hoffenheim",
+    "rating": "82"
+  },
+  {
+    "id": "60",
+    "name": "Weghorst",
+    "position": "4",
+    "nationality": "Holandia",
+    "league": "Bundesliga",
+    "club": "Vfl Wolfsburg",
+    "rating": "82"
+  },
+  {
+    "id": "61",
+    "name": "Suarez",
+    "position": "4",
+    "nationality": "Urugwaj",
+    "league": "Primera Division",
+    "club": "Atletico",
+    "rating": "87"
+  },
+  {
+    "id": "62",
+    "name": "Griezmann",
+    "position": "4",
+    "nationality": "Francja",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "86"
+  },
+  {
+    "id": "63",
+    "name": "Aspas",
+    "position": "4",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "Celta de Vigo",
+    "rating": "84"
+  },
+  {
+    "id": "64",
+    "name": "Moreno",
+    "position": "4",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "Villareal",
+    "rating": "84"
+  },
+  {
+    "id": "65",
+    "name": "Correa",
+    "position": "4",
+    "nationality": "Argentyna",
+    "league": "Primera Division",
+    "club": "Atletico",
+    "rating": "82"
+  },
+  {
+    "id": "66",
+    "name": "Ronaldo",
+    "position": "4",
+    "nationality": "Portugalia",
+    "league": "Italy Serie A",
+    "club": "Piemonte Calcio",
+    "rating": "92"
+  },
+  {
+    "id": "67",
+    "name": "Immobile",
+    "position": "4",
+    "nationality": "W這chy",
+    "league": "Italy Serie A",
+    "club": "Lazio",
+    "rating": "87"
+  },
+  {
+    "id": "68",
+    "name": "Lukaku",
+    "position": "4",
+    "nationality": "Belgia",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "86"
+  },
+  {
+    "id": "69",
+    "name": "Martinez",
+    "position": "4",
+    "nationality": "Argentyna",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "84"
+  },
+  {
+    "id": "70",
+    "name": "Ibrahimovic",
+    "position": "4",
+    "nationality": "Szwecja",
+    "league": "Italy Serie A",
+    "club": "Milan",
+    "rating": "84"
+  },
+  {
+    "id": "71",
+    "name": "Mbappe",
+    "position": "4",
+    "nationality": "Francja",
+    "league": "LIgue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "90"
+  },
+  {
+    "id": "72",
+    "name": "Ben Yedder",
+    "position": "4",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "AS Monaco",
+    "rating": "84"
+  },
+  {
+    "id": "73",
+    "name": "Icardi",
+    "position": "4",
+    "nationality": "Argentyna",
+    "league": "LIgue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "83"
+  },
+  {
+    "id": "74",
+    "name": "Volland",
+    "position": "4",
+    "nationality": "Niemiec",
+    "league": "LIgue 1",
+    "club": "AS Monaco",
+    "rating": "82"
+  },
+  {
+    "id": "75",
+    "name": "Milik",
+    "position": "4",
+    "nationality": "Polska",
+    "league": "LIgue 1",
+    "club": "Olympique de Marsille",
+    "rating": "80"
+  },
+  {
+    "id": "76",
+    "name": "De Bruyne",
+    "position": "3",
+    "nationality": "Belgia",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "91"
+  },
+  {
+    "id": "77",
+    "name": "Kante",
+    "position": "3",
+    "nationality": "Francja",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "rating": "88"
+  },
+  {
+    "id": "78",
+    "name": "Fernandes",
+    "position": "3",
+    "nationality": "Portugalia",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "rating": "88"
+  },
+  {
+    "id": "79",
+    "name": "Fabinho",
+    "position": "3",
+    "nationality": "Brazylia",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "rating": "87"
+  },
+  {
+    "id": "80",
+    "name": "Silva",
+    "position": "3",
+    "nationality": "Portugalia",
+    "league": "Premier League",
+    "club": "Manchester City ",
+    "rating": "86"
+  },
+  {
+    "id": "81",
+    "name": "Kimmich",
+    "position": "3",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "89"
+  },
+  {
+    "id": "82",
+    "name": "Muller",
+    "position": "3",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "87"
+  },
+  {
+    "id": "83",
+    "name": "Goretzka",
+    "position": "3",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Bayern",
+    "rating": "87"
+  },
+  {
+    "id": "84",
+    "name": "Reus",
+    "position": "3",
+    "nationality": "Niemiec",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "rating": "84"
+  },
+  {
+    "id": "85",
+    "name": "Sabitzer",
+    "position": "3",
+    "nationality": "Austria",
+    "league": "Bundesliga",
+    "club": "RB Leipzig",
+    "rating": "84"
+  },
+  {
+    "id": "86",
+    "name": "Casmiro",
+    "position": "3",
+    "nationality": "Brazylia",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "89"
+  },
+  {
+    "id": "87",
+    "name": "Kroos",
+    "position": "3",
+    "nationality": "Niemiec",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "88"
+  },
+  {
+    "id": "88",
+    "name": "Modric",
+    "position": "3",
+    "nationality": "Chorwacja",
+    "league": "Primera Division",
+    "club": "Real Madrid",
+    "rating": "87"
+  },
+  {
+    "id": "89",
+    "name": "Busquest",
+    "position": "3",
+    "nationality": "Hiszpania",
+    "league": "Primera Division",
+    "club": "FC Barcelona",
+    "rating": "86"
+  },
+  {
+    "id": "90",
+    "name": "Gomez",
+    "position": "3",
+    "nationality": "Argentyna",
+    "league": "Primera Division",
+    "club": "Sevilla",
+    "rating": "86"
+  },
+  {
+    "id": "91",
+    "name": "Alberto",
+    "position": "3",
+    "nationality": "Hiszpania",
+    "league": "Italy Serie A",
+    "club": "Lazio",
+    "rating": "85"
+  },
+  {
+    "id": "92",
+    "name": "Milinkovic-Savic",
+    "position": "3",
+    "nationality": "Serbia",
+    "league": "Italy Serie A",
+    "club": "Lazio",
+    "rating": "85"
+  },
+  {
+    "id": "93",
+    "name": "Brozovic",
+    "position": "3",
+    "nationality": "Chorwacja",
+    "league": "Italy Serie A",
+    "club": "Inter",
+    "rating": "84"
+  },
+  {
+    "id": "94",
+    "name": "Arthur",
+    "position": "3",
+    "nationality": "Brazylia",
+    "league": "Italy Serie A",
+    "club": "Piemonte Calcio",
+    "rating": "84"
+  },
+  {
+    "id": "95",
+    "name": "Leiva",
+    "position": "3",
+    "nationality": "Brazylia",
+    "league": "Italy Serie A",
+    "club": "Lazio",
+    "rating": "83"
+  },
+  {
+    "id": "96",
+    "name": "Verratti",
+    "position": "3",
+    "nationality": "W這chy",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "86"
+  },
+  {
+    "id": "97",
+    "name": "Gueye",
+    "position": "3",
+    "nationality": "Senegal",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "82"
+  },
+  {
+    "id": "98",
+    "name": "Pereira",
+    "position": "3",
+    "nationality": "Portugalia",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "81"
+  },
+  {
+    "id": "99",
+    "name": "Aouar",
+    "position": "3",
+    "nationality": "Francja",
+    "league": "Ligue 1",
+    "club": "Olympique Lyonnais",
+    "rating": "81"
+  },
+  {
+    "id": "100",
+    "name": "Paredes",
+    "position": "3",
+    "nationality": "Argentyna",
+    "league": "Ligue 1",
+    "club": "Paris Saint-Germain",
+    "rating": "81"
+  }
+]

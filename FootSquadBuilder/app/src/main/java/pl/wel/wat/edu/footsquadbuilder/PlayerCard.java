@@ -12,8 +12,8 @@ public class PlayerCard extends Player{
     private Integer chemistryLinks; // zgranie z polaczen
 
     // Konstruktor - wywolywac go z parametrami - getterami klasy Player
-    public PlayerCard(Integer id, Integer position, String nationality, String league, String club, Integer rating, boolean leader, Integer positionSet) {
-        super(id, position, nationality, league, club, rating, leader);
+    public PlayerCard(Integer id, String name, Integer position, String nationality, String league, String club, Integer rating, Integer positionSet) {
+        super(id, name, position, nationality, league, club, rating);
         this.positionSet = positionSet;
     }
 

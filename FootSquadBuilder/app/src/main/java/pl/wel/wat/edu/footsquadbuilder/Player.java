@@ -1,35 +1,40 @@
 package pl.wel.wat.edu.footsquadbuilder;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Player {
 
+    @PrimaryKey (autoGenerate = false)
     private Integer id;
-    private Integer position;
+    private String name;
+    private Integer position; // 1 - GK, 2 - CB, 3 - CM, 4 - ST
     private String nationality;
     private String league;
     private String club;
     private Integer rating;
-    private boolean leader;
 
     // Konstruktor
-    public Player(Integer id, Integer position, String nationality, String league, String club, Integer rating, boolean leader) {
+    public Player(Integer id, String name, Integer position, String nationality, String league, String club, Integer rating) {
         this.id = id;
+        this.name = name;
         this.position = position;
         this.nationality = nationality;
         this.league = league;
         this.club = club;
         this.rating = rating;
-        this.leader = leader;
     }
 
     // Konstruktor domyslny (zeby dalo sie dziedziczyc)
     public Player() {
         this.id = 98765;
+        this.name = "Player";
         this.position = 1;
         this.nationality = "Poland";
         this.league = "Premier League";
         this.club = "Arsenal";
         this.rating = 25;
-        this.leader = false;
     }
 
     // Settery i Gettery
@@ -38,6 +43,12 @@ public class Player {
     }
     public void setId(Integer id) {
         this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
     public Integer getPosition() {
         return position;
@@ -68,11 +79,5 @@ public class Player {
     }
     public void setRating(Integer rating) {
         this.rating = rating;
-    }
-    public boolean isLeader() {
-        return leader;
-    }
-    public void setLeader(boolean leader) {
-        this.leader = leader;
     }
 }
