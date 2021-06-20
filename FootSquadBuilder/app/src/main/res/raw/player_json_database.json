@@ -4,7 +4,7 @@
     "name": "Alisson",
     "position": "1",
     "nationality": "Brazylia",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Liverpool",
     "rating": "89"
   },
@@ -13,8 +13,8 @@
     "name": "Ederson",
     "position": "1",
     "nationality": "Brazylia",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "88"
   },
   {
@@ -22,17 +22,17 @@
     "name": "Lloris",
     "position": "1",
     "nationality": "Francja",
-    "league": "Premier League",
-    "club": "Tottenham Hotspur",
+    "league": "Premier_League",
+    "club": "Tottenham_Hotspur",
     "rating": "87"
   },
   {
     "id": "4",
-    "name": "De Gea",
+    "name": "De_Gea",
     "position": "1",
     "nationality": "Hiszpania",
-    "league": "Premier League",
-    "club": "Manchester United",
+    "league": "Premier_League",
+    "club": "Manchester_United",
     "rating": "86"
   },
   {
@@ -40,8 +40,8 @@
     "name": "Schmeichel",
     "position": "1",
     "nationality": "Dania",
-    "league": "Premier League",
-    "club": "Leicester City",
+    "league": "Premier_League",
+    "club": "Leicester_City",
     "rating": "85"
   },
   {
@@ -57,9 +57,9 @@
     "id": "7",
     "name": "Gulacsi",
     "position": "1",
-    "nationality": "W璕ry",
+    "nationality": "Wegry",
     "league": "Bundesliga",
-    "club": "RB Leipzig",
+    "club": "RB_Leipzig",
     "rating": "85"
   },
   {
@@ -68,7 +68,7 @@
     "position": "1",
     "nationality": "Belgia",
     "league": "Bundesliga",
-    "club": "Vfl Wolfsburg",
+    "club": "Vfl_Wolfsburg",
     "rating": "85"
   },
   {
@@ -77,7 +77,7 @@
     "position": "1",
     "nationality": "Szwajcaria",
     "league": "Bundesliga",
-    "club": "Borussia M'gladbach",
+    "club": "Borussia_M_gladbach",
     "rating": "83"
   },
   {
@@ -86,15 +86,15 @@
     "position": "1",
     "nationality": "Niemiec",
     "league": "Bundesliga",
-    "club": "Eintracht Frankfurt",
+    "club": "Eintracht_Frankfurt",
     "rating": "83"
   },
   {
     "id": "11",
     "name": "Oblak ",
     "position": "1",
-    "nationality": "S這wenia",
-    "league": "Primera Division",
+    "nationality": "Slowenia",
+    "league": "Primera_Division",
     "club": "Atletico",
     "rating": "91"
   },
@@ -103,8 +103,8 @@
     "name": "Stegen",
     "position": "1",
     "nationality": "Niemiec",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "90"
   },
   {
@@ -112,8 +112,8 @@
     "name": "Courtois",
     "position": "1",
     "nationality": "Belgia",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "89"
   },
   {
@@ -121,7 +121,7 @@
     "name": "Asenjo",
     "position": "1",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
+    "league": "Primera_Division",
     "club": "Villareal",
     "rating": "82"
   },
@@ -130,8 +130,8 @@
     "name": "Neto",
     "position": "1",
     "nationality": "Brazylia",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "82"
   },
   {
@@ -139,8 +139,8 @@
     "name": "Lecomte",
     "position": "1",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "AS Monaco",
+    "league": "Ligue_1",
+    "club": "AS_Monaco",
     "rating": "80"
   },
   {
@@ -149,7 +149,7 @@
     "position": "1",
     "nationality": "Kongo",
     "league": "Ligue 1",
-    "club": "Olympique de Marsille",
+    "club": "Olympique_de_Marsille",
     "rating": "82"
   },
   {
@@ -157,8 +157,8 @@
     "name": "Maignan",
     "position": "1",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "LOSC Lille",
+    "league": "Ligue_1",
+    "club": "LOSC_Lille",
     "rating": "83"
   },
   {
@@ -166,8 +166,8 @@
     "name": "Costil",
     "position": "1",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "Girondins de Bordeaux",
+    "league": "Ligue_1",
+    "club": "Girondins_de_Bordeaux",
     "rating": "79"
   },
   {
@@ -175,25 +175,25 @@
     "name": "Bernardoni",
     "position": "1",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "Angers SCO",
+    "league": "Ligue_1",
+    "club": "Angers_SCO",
     "rating": "78"
   },
   {
     "id": "21",
-    "name": "Szcz瘰ny",
+    "name": "Szczesny",
     "position": "1",
     "nationality": "Polska",
-    "league": "Italy Serie A",
-    "club": "Piemonte Calcio",
+    "league": "Italy_Serie_A",
+    "club": "Piemonte_Calcio",
     "rating": "87"
   },
   {
     "id": "22",
     "name": "Handanovic",
     "position": "1",
-    "nationality": "S這wacja",
-    "league": "Italy Serie A",
+    "nationality": "Slowacja",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "87"
   },
@@ -202,7 +202,7 @@
     "name": "Perin",
     "position": "1",
     "nationality": "Wlochy",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Genoa",
     "rating": "82"
   },
@@ -211,8 +211,8 @@
     "name": "Buffon",
     "position": "1",
     "nationality": "Wlochy",
-    "league": "Italy Serie A",
-    "club": " Piemonte Calcio",
+    "league": "Italy_Serie_A",
+    "club": " Piemonte_Calcio",
     "rating": "82"
   },
   {
@@ -220,7 +220,7 @@
     "name": "Consigli",
     "position": "1",
     "nationality": "Wlochy",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Sassuolo",
     "rating": "81"
   },
@@ -229,7 +229,7 @@
     "name": "Dijk",
     "position": "2",
     "nationality": "Holandia",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Liverpool",
     "rating": "90"
   },
@@ -238,8 +238,8 @@
     "name": "Laporte",
     "position": "2",
     "nationality": "Hiszpania",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "86"
   },
   {
@@ -247,7 +247,7 @@
     "name": "Silva",
     "position": "2",
     "nationality": "Brazylia",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Chelsea",
     "rating": "85"
   },
@@ -256,8 +256,8 @@
     "name": "Dias",
     "position": "2",
     "nationality": "Portugalia",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "85"
   },
   {
@@ -265,8 +265,8 @@
     "name": "Alderweireld",
     "position": "2",
     "nationality": "Belgia",
-    "league": "Premier League",
-    "club": "Tottenham Hotspur",
+    "league": "Premier_League",
+    "club": "Tottenham_Hotspur",
     "rating": "84"
   },
   {
@@ -275,7 +275,7 @@
     "position": "2",
     "nationality": "Niemiec",
     "league": "Bundesliga",
-    "club": "Borussia Dortmund",
+    "club": "Borussia_Dortmund",
     "rating": "87"
   },
   {
@@ -302,7 +302,7 @@
     "position": "2",
     "nationality": "Niemiec",
     "league": "Bundesliga",
-    "club": "Borussia M'gladbach",
+    "club": "Borussia_M_gladbach",
     "rating": "83"
   },
   {
@@ -319,8 +319,8 @@
     "name": "Ramos",
     "position": "2",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "89"
   },
   {
@@ -328,8 +328,8 @@
     "name": "Pique",
     "position": "2",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "86"
   },
   {
@@ -337,8 +337,8 @@
     "name": "Varene",
     "position": "2",
     "nationality": "Francja",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "85"
   },
   {
@@ -346,8 +346,8 @@
     "name": "Gimenez",
     "position": "2",
     "nationality": "Urugwaj",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "84"
   },
   {
@@ -355,8 +355,8 @@
     "name": "Lenglet",
     "position": "2",
     "nationality": "Francja",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "83"
   },
   {
@@ -364,7 +364,7 @@
     "name": "Koulibaly",
     "position": "2",
     "nationality": "Francja",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Napoli",
     "rating": "88"
   },
@@ -372,35 +372,35 @@
     "id": "42",
     "name": "Chiellini",
     "position": "2",
-    "nationality": "W這chy",
-    "league": "Italy Serie A",
-    "club": "Piemonte Calcio",
+    "nationality": "Wlochy",
+    "league": "Italy_Serie_A",
+    "club": "Piemonte_Calcio",
     "rating": "86"
   },
   {
     "id": "43",
     "name": "Skriniar",
     "position": "2",
-    "nationality": "S這wacja",
-    "league": "Italy Serie A",
+    "nationality": "Slowacja",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "86"
   },
   {
     "id": "44",
-    "name": "de Light",
+    "name": "de_Light",
     "position": "2",
     "nationality": "Holandia",
-    "league": "Italy Serie A",
-    "club": "Piemonte Calcio",
+    "league": "Italy_Serie_A",
+    "club": "Piemonte_Calcio",
     "rating": "85"
   },
   {
     "id": "45",
-    "name": "de Vrij",
+    "name": "de_Vrij",
     "position": "2",
     "nationality": "Holandia",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "85"
   },
@@ -409,8 +409,8 @@
     "name": "Marquinhos",
     "position": "2",
     "nationality": "Brazylia",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "87"
   },
   {
@@ -418,8 +418,8 @@
     "name": "Kimpembe",
     "position": "2",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "83"
   },
   {
@@ -427,8 +427,8 @@
     "name": "Denayer",
     "position": "2",
     "nationality": "Belgia",
-    "league": "Ligue 1",
-    "club": " Olympique Lyonnais",
+    "league": "Ligue_1",
+    "club": " Olympique_Lyonnais",
     "rating": "80"
   },
   {
@@ -436,8 +436,8 @@
     "name": "Fonte",
     "position": "2",
     "nationality": "Portugalia",
-    "league": "Ligue 1",
-    "club": "LOSC Lille",
+    "league": "Ligue_1",
+    "club": "LOSC_Lille",
     "rating": "80"
   },
   {
@@ -445,8 +445,8 @@
     "name": "Alvaro",
     "position": "2",
     "nationality": "Hiszpania",
-    "league": "Ligue 1",
-    "club": "Olympique de Marsille",
+    "league": "Ligue_1",
+    "club": "Olympique_de_Marsille",
     "rating": "79"
   },
   {
@@ -454,8 +454,8 @@
     "name": "Kane",
     "position": "4",
     "nationality": "Anglia",
-    "league": "Premier League",
-    "club": "Tottenham Hotspur",
+    "league": "Premier_League",
+    "club": "Tottenham_Hotspur",
     "rating": "89"
   },
   {
@@ -463,8 +463,8 @@
     "name": "Vardy",
     "position": "4",
     "nationality": "Anglia",
-    "league": "Premier League",
-    "club": "Leicester City",
+    "league": "Premier_League",
+    "club": "Leicester_City",
     "rating": "87"
   },
   {
@@ -472,8 +472,8 @@
     "name": "Aguero",
     "position": "4",
     "nationality": "Argentyna",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "87"
   },
   {
@@ -481,7 +481,7 @@
     "name": "Aubameyang",
     "position": "4",
     "nationality": "Francja",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Arsenal",
     "rating": "85"
   },
@@ -490,7 +490,7 @@
     "name": "Werner",
     "position": "4",
     "nationality": "Niemiec",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Chelsea",
     "rating": "84"
   },
@@ -509,7 +509,7 @@
     "position": "4",
     "nationality": "Norwegia",
     "league": "Bundesliga",
-    "club": "Borussia Dortmund",
+    "club": "Borussia_Dortmund",
     "rating": "87"
   },
   {
@@ -518,7 +518,7 @@
     "position": "4",
     "nationality": "Portugalia",
     "league": "Bundesliga",
-    "club": "Eintracht Frankfurt",
+    "club": "Eintracht_Frankfurt",
     "rating": "84"
   },
   {
@@ -536,7 +536,7 @@
     "position": "4",
     "nationality": "Holandia",
     "league": "Bundesliga",
-    "club": "Vfl Wolfsburg",
+    "club": "Vfl_Wolfsburg",
     "rating": "82"
   },
   {
@@ -544,7 +544,7 @@
     "name": "Suarez",
     "position": "4",
     "nationality": "Urugwaj",
-    "league": "Primera Division",
+    "league": "Primera_Division",
     "club": "Atletico",
     "rating": "87"
   },
@@ -553,8 +553,8 @@
     "name": "Griezmann",
     "position": "4",
     "nationality": "Francja",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "86"
   },
   {
@@ -562,8 +562,8 @@
     "name": "Aspas",
     "position": "4",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
-    "club": "Celta de Vigo",
+    "league": "Primera_Division",
+    "club": "Celta_de_Vigo",
     "rating": "84"
   },
   {
@@ -571,7 +571,7 @@
     "name": "Moreno",
     "position": "4",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
+    "league": "Primera_Division",
     "club": "Villareal",
     "rating": "84"
   },
@@ -580,7 +580,7 @@
     "name": "Correa",
     "position": "4",
     "nationality": "Argentyna",
-    "league": "Primera Division",
+    "league": "Primera_Division",
     "club": "Atletico",
     "rating": "82"
   },
@@ -589,16 +589,16 @@
     "name": "Ronaldo",
     "position": "4",
     "nationality": "Portugalia",
-    "league": "Italy Serie A",
-    "club": "Piemonte Calcio",
+    "league": "Italy_Serie_A",
+    "club": "Piemonte_Calcio",
     "rating": "92"
   },
   {
     "id": "67",
     "name": "Immobile",
     "position": "4",
-    "nationality": "W這chy",
-    "league": "Italy Serie A",
+    "nationality": "Wlochy",
+    "league": "Italy_Serie_A",
     "club": "Lazio",
     "rating": "87"
   },
@@ -607,7 +607,7 @@
     "name": "Lukaku",
     "position": "4",
     "nationality": "Belgia",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "86"
   },
@@ -616,7 +616,7 @@
     "name": "Martinez",
     "position": "4",
     "nationality": "Argentyna",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "84"
   },
@@ -625,7 +625,7 @@
     "name": "Ibrahimovic",
     "position": "4",
     "nationality": "Szwecja",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Milan",
     "rating": "84"
   },
@@ -634,17 +634,17 @@
     "name": "Mbappe",
     "position": "4",
     "nationality": "Francja",
-    "league": "LIgue 1",
-    "club": "Paris Saint-Germain",
+    "league": "LIgue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "90"
   },
   {
     "id": "72",
-    "name": "Ben Yedder",
+    "name": "Ben_Yedder",
     "position": "4",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "AS Monaco",
+    "league": "Ligue_1",
+    "club": "AS_Monaco",
     "rating": "84"
   },
   {
@@ -652,8 +652,8 @@
     "name": "Icardi",
     "position": "4",
     "nationality": "Argentyna",
-    "league": "LIgue 1",
-    "club": "Paris Saint-Germain",
+    "league": "LIgue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "83"
   },
   {
@@ -661,8 +661,8 @@
     "name": "Volland",
     "position": "4",
     "nationality": "Niemiec",
-    "league": "LIgue 1",
-    "club": "AS Monaco",
+    "league": "LIgue_1",
+    "club": "AS_Monaco",
     "rating": "82"
   },
   {
@@ -671,16 +671,16 @@
     "position": "4",
     "nationality": "Polska",
     "league": "LIgue 1",
-    "club": "Olympique de Marsille",
+    "club": "Olympique_de_Marsille",
     "rating": "80"
   },
   {
     "id": "76",
-    "name": "De Bruyne",
+    "name": "De_Bruyne",
     "position": "3",
     "nationality": "Belgia",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "91"
   },
   {
@@ -688,7 +688,7 @@
     "name": "Kante",
     "position": "3",
     "nationality": "Francja",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Chelsea",
     "rating": "88"
   },
@@ -697,8 +697,8 @@
     "name": "Fernandes",
     "position": "3",
     "nationality": "Portugalia",
-    "league": "Premier League",
-    "club": "Manchester United",
+    "league": "Premier_League",
+    "club": "Manchester_United",
     "rating": "88"
   },
   {
@@ -706,7 +706,7 @@
     "name": "Fabinho",
     "position": "3",
     "nationality": "Brazylia",
-    "league": "Premier League",
+    "league": "Premier_League",
     "club": "Liverpool",
     "rating": "87"
   },
@@ -715,8 +715,8 @@
     "name": "Silva",
     "position": "3",
     "nationality": "Portugalia",
-    "league": "Premier League",
-    "club": "Manchester City ",
+    "league": "Premier_League",
+    "club": "Manchester_City ",
     "rating": "86"
   },
   {
@@ -752,7 +752,7 @@
     "position": "3",
     "nationality": "Niemiec",
     "league": "Bundesliga",
-    "club": "Borussia Dortmund",
+    "club": "Borussia_Dortmund",
     "rating": "84"
   },
   {
@@ -761,7 +761,7 @@
     "position": "3",
     "nationality": "Austria",
     "league": "Bundesliga",
-    "club": "RB Leipzig",
+    "club": "RB_Leipzig",
     "rating": "84"
   },
   {
@@ -769,8 +769,8 @@
     "name": "Casmiro",
     "position": "3",
     "nationality": "Brazylia",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "89"
   },
   {
@@ -778,8 +778,8 @@
     "name": "Kroos",
     "position": "3",
     "nationality": "Niemiec",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "88"
   },
   {
@@ -787,8 +787,8 @@
     "name": "Modric",
     "position": "3",
     "nationality": "Chorwacja",
-    "league": "Primera Division",
-    "club": "Real Madrid",
+    "league": "Primera_Division",
+    "club": "Real_Madrid",
     "rating": "87"
   },
   {
@@ -796,8 +796,8 @@
     "name": "Busquest",
     "position": "3",
     "nationality": "Hiszpania",
-    "league": "Primera Division",
-    "club": "FC Barcelona",
+    "league": "Primera_Division",
+    "club": "FC_Barcelona",
     "rating": "86"
   },
   {
@@ -805,7 +805,7 @@
     "name": "Gomez",
     "position": "3",
     "nationality": "Argentyna",
-    "league": "Primera Division",
+    "league": "Primera_Division",
     "club": "Sevilla",
     "rating": "86"
   },
@@ -814,16 +814,16 @@
     "name": "Alberto",
     "position": "3",
     "nationality": "Hiszpania",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Lazio",
     "rating": "85"
   },
   {
     "id": "92",
-    "name": "Milinkovic-Savic",
+    "name": "Milinkovic_Savic",
     "position": "3",
     "nationality": "Serbia",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Lazio",
     "rating": "85"
   },
@@ -832,7 +832,7 @@
     "name": "Brozovic",
     "position": "3",
     "nationality": "Chorwacja",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Inter",
     "rating": "84"
   },
@@ -841,8 +841,8 @@
     "name": "Arthur",
     "position": "3",
     "nationality": "Brazylia",
-    "league": "Italy Serie A",
-    "club": "Piemonte Calcio",
+    "league": "Italy_Serie_A",
+    "club": "Piemonte_Calcio",
     "rating": "84"
   },
   {
@@ -850,7 +850,7 @@
     "name": "Leiva",
     "position": "3",
     "nationality": "Brazylia",
-    "league": "Italy Serie A",
+    "league": "Italy_Serie_A",
     "club": "Lazio",
     "rating": "83"
   },
@@ -858,9 +858,9 @@
     "id": "96",
     "name": "Verratti",
     "position": "3",
-    "nationality": "W這chy",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "nationality": "Wlochy",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "86"
   },
   {
@@ -868,8 +868,8 @@
     "name": "Gueye",
     "position": "3",
     "nationality": "Senegal",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "82"
   },
   {
@@ -877,8 +877,8 @@
     "name": "Pereira",
     "position": "3",
     "nationality": "Portugalia",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "81"
   },
   {
@@ -886,8 +886,8 @@
     "name": "Aouar",
     "position": "3",
     "nationality": "Francja",
-    "league": "Ligue 1",
-    "club": "Olympique Lyonnais",
+    "league": "Ligue_1",
+    "club": "Olympique_Lyonnais",
     "rating": "81"
   },
   {
@@ -895,8 +895,8 @@
     "name": "Paredes",
     "position": "3",
     "nationality": "Argentyna",
-    "league": "Ligue 1",
-    "club": "Paris Saint-Germain",
+    "league": "Ligue_1",
+    "club": "Paris_Saint_Germain",
     "rating": "81"
   }
 ]
