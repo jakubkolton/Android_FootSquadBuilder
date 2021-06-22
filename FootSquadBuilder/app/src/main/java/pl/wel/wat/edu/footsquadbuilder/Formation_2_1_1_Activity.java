@@ -3,6 +3,7 @@ package pl.wel.wat.edu.footsquadbuilder;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -34,10 +35,10 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
                     Toast.makeText(Formation_2_1_1_Activity.this, "rezerwa", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.nav_bot_list:
-                    Toast.makeText(Formation_2_1_1_Activity.this, "lista", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Formation_2_1_1_Activity.this, PlayersListActivity.class));
                     break;
             }
-            return false;
+            return true;
         }
     };
 }

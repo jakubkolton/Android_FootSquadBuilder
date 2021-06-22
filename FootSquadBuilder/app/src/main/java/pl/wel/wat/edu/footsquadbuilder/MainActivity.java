@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         addItemsFromJsonArray();
 
         // testy pobierania bazy - UWAGA! W BAZIE PILKARZE MAJA ID OD 1 DO 100, ALE LISTA INDEKSOWANA JEST OD 0 DO 99
-//        for (int i = 0; i < 100; i++) {
-//            Log.d("Proba:", playersDB.get(i).getName());
-//        }
+        for (int i = 0; i < 100; i++) {
+            Log.d("Proba:", playersDB.get(i).getName());
+        }
     }
 
     public static List<Player> getPlayersDB() {
