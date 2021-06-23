@@ -17,10 +17,8 @@ public class PlayersListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_players_list);
 
         PlayerDatabse databse = FootSquadBuilderApplication.getINSTANCE();
-
-        PlayerDao playerDao = databse.playerDao();
-
-        List<Player> data = playerDao.getAll();
+        
+        List<Player> data = MainActivity.getPlayersDB();
 
         for (Player pl : data) {
             Log.i("Zawodnik: ", pl.toString());

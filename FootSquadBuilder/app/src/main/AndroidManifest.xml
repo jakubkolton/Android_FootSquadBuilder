@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FootSquadBuilder">
-        <activity android:name=".PlayersListActivity"></activity>
+        <activity android:name=".PlayersListActivity" />
         <activity android:name=".Formation_2_1_1_Activity" />
         <activity android:name=".Formation_1_1_2_Activity" />
         <activity
