@@ -20,12 +20,22 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import pl.wel.wat.edu.footsquadbuilder.databinding.ActivityHomeBinding;
+
+import static java.lang.Math.random;
 
 public class HomeActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    public static List<Player> playersBenchList;
+    public static List<Player> playersRandomizedList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +74,20 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        playersBenchList = new ArrayList<>();
+        playersRandomizedList = new ArrayList<>();
+        // testy
+//        Player testowy = MainActivity.getPlayersDB().get(1);
+//        playersBenchList.add(testowy);
+
+        PlayersListAdapter playersListAdapter = new PlayersListAdapter(playersRandomizedList);
+        RecyclerView rvPlayers = (RecyclerView)findViewById(R.id.rvPlayersRandomizedList_view);
+        rvPlayers.setAdapter(playersListAdapter);
+        rvPlayers.setLayoutManager(new LinearLayoutManager(this));
+
+        playersRandomization(rvPlayers);
+
     }
 
     @Override
@@ -90,5 +114,48 @@ public class HomeActivity extends AppCompatActivity {
         } else {
             return actionBarDrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
         }
+    }
+
+    // Metoda procedury losujacej 10 zawodnikow
+    // PAMIETAC O SPRAWDZENIU ID-KOW PILKARZY, ZEBY SIE DUBLOWALI
+    public void playersRandomization(RecyclerView rvPlayers) {
+
+        // testy
+//        Player testowy = MainActivity.getPlayersDB().get(1);
+//        playersBenchList.add(testowy);
+//        testowy = MainActivity.getPlayersDB().get(2);
+//        playersBenchList.add(testowy);
+
+
+
+        int ID;
+        Player randomPlayer;
+        // Losowanie 2 GK, 2 CB, 2 CM, 2 ST
+        for (int j = 1; j < 5; j++) {
+            for (int i = 0; i < 2; i++) {
+                for (int k = 0; k < 3; k++) {
+                    do {
+                        ID = (int)(random()*99 + 1);
+                        randomPlayer = MainActivity.getPlayersDB().get(ID);
+                    } while (randomPlayer.getPosition() != j);
+                    playersRandomizedList.add(randomPlayer);
+                    // Opoznienie wizualne wyswietlania - COS NIE SMIGA I OPOZNIA CALY PROGRAM
+//                    try {
+//                        TimeUnit.MILLISECONDS.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+
+
+                }
+//                playersRandomizedList.removeAll();
+//                playersBenchList.add(randomPlayer);
+            }
+        }
+
+    }
+
+    public static List<Player> getPlayersBenchList() {
+        return playersBenchList;
     }
 }

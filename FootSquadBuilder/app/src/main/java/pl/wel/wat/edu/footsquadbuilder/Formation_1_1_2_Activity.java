@@ -32,7 +32,8 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     Toast.makeText(Formation_1_1_2_Activity.this, "home", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.nav_bot_rez:
-                    Toast.makeText(Formation_1_1_2_Activity.this, "rezerwa", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Formation_1_1_2_Activity.this, "rezerwa", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Formation_1_1_2_Activity.this, PlayersBenchActivity.class));
                     break;
                 case R.id.nav_bot_list:
                     startActivity(new Intent(Formation_1_1_2_Activity.this, PlayersListActivity.class));

@@ -24,6 +24,11 @@ import java.util.List;
 public class PlayersListAdapter extends RecyclerView.Adapter<PlayersListAdapter.ViewHolder> {
 
     private List<Player> players;
+    private static int choosePosition = -1;
+
+    public static int getChoosePosition() {
+        return choosePosition;
+    }
 
     public PlayersListAdapter(List<Player> mPlayers) { players = mPlayers; }
 
@@ -48,6 +53,16 @@ public class PlayersListAdapter extends RecyclerView.Adapter<PlayersListAdapter.
         for (Player p : players) {
             Log.i("Zawodnik: ", p.toString());
         }
+
+        // Nasluchiwacz klikniec
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // reakcja
+                choosePosition = holder.getBindingAdapterPosition();
+                Log.d("Test LISTENER:", "Klikniete w pozycje " + choosePosition);
+            }
+        });
 
         TextView textViewFutCardListNameH = holder.textViewFutCardListNameL;
         textViewFutCardListNameH.setText(player.getName());
