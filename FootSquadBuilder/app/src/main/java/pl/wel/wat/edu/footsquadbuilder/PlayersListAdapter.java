@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,11 +69,27 @@ public class PlayersListAdapter extends RecyclerView.Adapter<PlayersListAdapter.
         TextView textViewFutCardListScoreH = holder.textViewFutCardListScoreL;
         textViewFutCardListScoreH.setText(Integer.toString(player.getRating()));
         ImageView imageViewFutCardListPhotoH = holder.imageViewFutCardListPhotoL;
-        imageViewFutCardListPhotoH.setImageResource(R.drawable.p1);
+        String photoPlayer = "p"+player.getId();
+        Context context = imageViewFutCardListPhotoH.getContext();
+        int idPhoto = context.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
+        imageViewFutCardListPhotoH.setImageResource(idPhoto);
         ImageView imageViewFutCardListClubH = holder.imageViewFutCardListClubL;
-        imageViewFutCardListClubH.setImageResource(R.drawable.real_madrid);
+        switch (player.getClub()){
+            case "Angers_SCO":
+                imageViewFutCardListClubH.setImageResource(R.drawable.angers_sco);
+                break;
+            case "Arsenal":
+                imageViewFutCardListClubH.setImageResource(R.drawable.arsenal);
+                break;
+        }
+
         ImageView imageViewFutCardListCountryH = holder.imageViewFutCardListCountryL;
-        imageViewFutCardListCountryH.setImageResource(R.drawable.argentyna);
+        switch (player.getNationality()){
+            case "Anglia":
+                imageViewFutCardListCountryH.setImageResource(R.drawable.anglia);
+                break;
+        }
+
     }
 
     @Override
