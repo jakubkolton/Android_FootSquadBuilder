@@ -145,14 +145,12 @@ public class HomeActivity extends AppCompatActivity {
 //                    } catch (InterruptedException e) {
 //                        e.printStackTrace();
 //                    }
-
-
+                    
                 }
 //                playersRandomizedList.removeAll();
 //                playersBenchList.add(randomPlayer);
             }
         }
-
     }
 
     public static List<Player> getPlayersBenchList() {

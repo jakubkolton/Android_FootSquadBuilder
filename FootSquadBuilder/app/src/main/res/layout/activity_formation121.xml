@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
@@ -22,7 +23,7 @@
 
                 <LinearLayout
                     android:layout_width="60dp"
-                    android:layout_height="150dp"
+                    android:layout_height="145dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -45,7 +46,7 @@
                         android:id="@+id/imageViewFutCardCountry_121ST"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -94,6 +95,26 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="145dp"
+                android:background="@android:color/black"/>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="100dp"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -104,10 +125,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CM1"
             style="@style/FutCard"
-            android:layout_marginEnd="45dp"
-            android:layout_marginRight="45dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp">
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,7 +135,7 @@
 
                 <LinearLayout
                     android:layout_width="60dp"
-                    android:layout_height="150dp"
+                    android:layout_height="145dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -139,7 +158,7 @@
                         android:id="@+id/imageViewFutCardCountry_121CM1"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -189,6 +208,12 @@
 
         </androidx.cardview.widget.CardView>
 
+        <View
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/black"/>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CM2"
             style="@style/FutCard">
@@ -196,13 +221,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:orientation="horizontal"
-                android:layout_marginStart="10dp">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="60dp"
-                    android:layout_height="150dp"
+                    android:layout_height="145dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -225,7 +248,7 @@
                         android:id="@+id/imageViewFutCardCountry_121CM2"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -282,6 +305,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="145dp"
+                android:background="@android:color/black"/>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="100dp"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CB"
             style="@style/FutCard"
@@ -294,7 +336,7 @@
 
                 <LinearLayout
                     android:layout_width="60dp"
-                    android:layout_height="150dp"
+                    android:layout_height="145dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -317,7 +359,7 @@
                         android:id="@+id/imageViewFutCardCountry_121CB"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
@@ -372,7 +414,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="195dp"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121GK"
@@ -386,7 +442,7 @@
 
                 <LinearLayout
                     android:layout_width="60dp"
-                    android:layout_height="150dp"
+                    android:layout_height="145dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -409,7 +465,7 @@
                         android:id="@+id/imageViewFutCardCountry_121GK"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="40dp"
-                        android:layout_height="30dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="8dp"/>
 
                     <TextView
