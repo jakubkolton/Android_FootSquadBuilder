@@ -2,22 +2,16 @@ package pl.wel.wat.edu.footsquadbuilder;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -25,9 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import pl.wel.wat.edu.footsquadbuilder.databinding.ActivityHomeBinding;
 
 import static java.lang.Math.random;
 
@@ -36,6 +27,15 @@ public class HomeActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     public static List<Player> playersBenchList;
     public static List<Player> playersRandomizedList;
+    public static int noRandomization = 1;
+    public static PlayersListAdapter playersListAdapter;
+
+    public static int getNoRandomization() {
+        return noRandomization;
+    }
+    public static void setNoRandomization(int noRandomization) {
+        HomeActivity.noRandomization = noRandomization;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,12 +81,14 @@ public class HomeActivity extends AppCompatActivity {
 //        Player testowy = MainActivity.getPlayersDB().get(1);
 //        playersBenchList.add(testowy);
 
-        PlayersListAdapter playersListAdapter = new PlayersListAdapter(playersRandomizedList);
+        playersListAdapter = new PlayersListAdapter(playersRandomizedList);
         RecyclerView rvPlayers = (RecyclerView)findViewById(R.id.rvPlayersRandomizedList_view);
         rvPlayers.setAdapter(playersListAdapter);
         rvPlayers.setLayoutManager(new LinearLayoutManager(this));
 
-        playersRandomization(rvPlayers);
+        playersListAdapter.notifyDataSetChanged();
+
+        playersRandomization(noRandomization);
 
     }
 
@@ -118,42 +120,86 @@ public class HomeActivity extends AppCompatActivity {
 
     // Metoda procedury losujacej 10 zawodnikow
     // PAMIETAC O SPRAWDZENIU ID-KOW PILKARZY, ZEBY SIE DUBLOWALI
-    public void playersRandomization(RecyclerView rvPlayers) {
+    // no - numer losowanie 3-elementowego
+    public static void playersRandomization(int no) {
 
-        // testy
-//        Player testowy = MainActivity.getPlayersDB().get(1);
-//        playersBenchList.add(testowy);
-//        testowy = MainActivity.getPlayersDB().get(2);
-//        playersBenchList.add(testowy);
-
-
-
+        int position = 0;
         int ID;
-        Player randomPlayer;
-        // Losowanie 2 GK, 2 CB, 2 CM, 2 ST
-        for (int j = 1; j < 5; j++) {
-            for (int i = 0; i < 2; i++) {
-                for (int k = 0; k < 3; k++) {
-                    do {
-                        ID = (int)(random()*99 + 1);
-                        randomPlayer = MainActivity.getPlayersDB().get(ID);
-                    } while (randomPlayer.getPosition() != j);
-                    playersRandomizedList.add(randomPlayer);
-                    // Opoznienie wizualne wyswietlania - COS NIE SMIGA I OPOZNIA CALY PROGRAM
-//                    try {
-//                        TimeUnit.MILLISECONDS.sleep(1000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-                    
-                }
-//                playersRandomizedList.removeAll();
-//                playersBenchList.add(randomPlayer);
+        Player randomPlayer = new Player();
+
+        if (noRandomization <= 8) { // 8 pierwszych losowan - po 2 na kazda pozycje
+            switch (noRandomization) {
+                case 1:
+                case 5: // GK
+                    position = 1;
+                    break;
+                case 2:
+                case 6: // CB
+                    position = 2;
+                    break;
+                case 3:
+                case 7: // CM
+                    position = 3;
+                    break;
+                case 4:
+                case 8: // ST
+                    position = 4;
+                    break;
+                default:
+                    position = 1; // GK, zeby wykryc bledy
+                    break;
+            }
+
+            for (int k = 0; k < 3; k++) {
+                do {
+                    ID = (int) (random() * 99 + 1); // ID w bazie danych: 1-100; w liscie 0-99
+                    randomPlayer = MainActivity.getPlayersDB().get(ID-1);
+                } while ((randomPlayer.getPosition() != position) || (isAlreadyPicked(ID)) || (isAlreadyRandomized(ID)));
+
+            playersRandomizedList.add(randomPlayer);
+            }
+        } else if (noRandomization <= 10) { // 2 kolejne losowania na dowolna pozycje
+            for (int k = 0; k < 3; k++) {
+                ID = (int) (random() * 99 + 1);
+                randomPlayer = MainActivity.getPlayersDB().get(ID-1);
+                playersRandomizedList.add(randomPlayer);
+            }
+        } else { // koniec procedury
+            for (int i = 0; i < playersBenchList.size(); i++) {
+                Log.d("Test RANDOMIZATION:", playersBenchList.get(i).getName());
             }
         }
     }
 
+    // Metoda sprawdzajaca, czy wylosowany pilkarz znajduje sie juz na lawce rezerwowych
+    public static boolean isAlreadyPicked(int id) {
+
+        for (int i = 0; i < playersBenchList.size(); i++) {
+            if (playersBenchList.get(i).getId() == id) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // Metoda sprawdzajaca, czy wylosowany pilkarz znajduje sie juz na liscie 3 wylosowanych
+    public static boolean isAlreadyRandomized(int id) {
+
+        for (int i = 0; i < playersRandomizedList.size(); i++) {
+            if (playersRandomizedList.get(i).getId() == id) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public static List<Player> getPlayersBenchList() {
         return playersBenchList;
+    }
+
+    public static List<Player> getPlayersRandomizedList() {
+        return playersRandomizedList;
     }
 }

@@ -2,8 +2,6 @@ package pl.wel.wat.edu.footsquadbuilder;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,13 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PlayersListAdapter extends RecyclerView.Adapter<PlayersListAdapter.ViewHolder> {
@@ -59,8 +52,18 @@ public class PlayersListAdapter extends RecyclerView.Adapter<PlayersListAdapter.
             @Override
             public void onClick(View v) {
                 // reakcja
-                choosePosition = holder.getBindingAdapterPosition();
-                Log.d("Test LISTENER:", "Klikniete w pozycje " + choosePosition);
+                int index = holder.getBindingAdapterPosition();
+                Log.d("Test LISTENER:", "Klikniete w pozycje " + index);
+                Player randomPlayer = HomeActivity.getPlayersRandomizedList().get(index);
+                HomeActivity.playersBenchList.add(randomPlayer);
+                Log.d("Test LISTENER:", "Dodany pilkarz: " + HomeActivity.getPlayersBenchList().get(HomeActivity.getPlayersBenchList().size()-1).getName());
+
+                // Kolejne losowanie
+                HomeActivity.playersRandomizedList.clear();
+                HomeActivity.playersListAdapter.notifyDataSetChanged();
+                HomeActivity.setNoRandomization(HomeActivity.getNoRandomization()+1);
+                Log.d("Test LISTENER:", "Kolejne no: " + HomeActivity.getNoRandomization());
+                HomeActivity.playersRandomization(HomeActivity.getNoRandomization());
             }
         });
 
