@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/lineraLayoutFormation112"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -14,6 +15,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_112ST1"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp">
 
@@ -105,6 +107,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_112ST2"
+            android:clickable="true"
             style="@style/FutCard">
 
             <LinearLayout
@@ -216,6 +219,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_112CM"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
@@ -320,6 +324,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_112CB"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
@@ -426,6 +431,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_112GK"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
