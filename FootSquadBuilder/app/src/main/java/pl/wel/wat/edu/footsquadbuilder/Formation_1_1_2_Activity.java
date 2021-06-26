@@ -25,6 +25,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+import static pl.wel.wat.edu.footsquadbuilder.R.*;
+
 public class Formation_1_1_2_Activity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
@@ -73,7 +75,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formation112);
+        setContentView(layout.activity_formation112);
 
 
         // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 5-elementowa na 5 linii zgrania
@@ -83,51 +85,57 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             formationListPlayers.add(new PlayerCard());
             linkList.add(new Link());
         }
+        // Przypisanie widokow z liniami do linii zgrania
+        linkList.get(0).setViewLink(findViewById(id.link_112_0));
+        linkList.get(1).setViewLink(findViewById(id.link_112_1));
+        linkList.get(2).setViewLink(findViewById(id.link_112_2));
+        linkList.get(3).setViewLink(findViewById(id.link_112_3));
+        linkList.get(4).setViewLink(findViewById(id.link_112_4));
 
 
-        FCscore112ST1 = (TextView) findViewById(R.id.textViewFutCardScore_112ST1);
-        FCclub112ST1 = (ImageView) findViewById(R.id.imageViewFutCardClub_112ST1);
-        FCcountry112ST1 = (ImageView) findViewById(R.id.imageViewFutCardCountry_112ST1);
-        FCpos112ST1 = (TextView) findViewById(R.id.textViewFutCardPos_112ST1);
-        FCphoto112ST1 = (ImageView) findViewById(R.id.imageViewFutCardPhoto_112ST1);
-        FCname112ST1 = (TextView) findViewById(R.id.textViewFutCardName_112ST1);
+        FCscore112ST1 = (TextView) findViewById(id.textViewFutCardScore_112ST1);
+        FCclub112ST1 = (ImageView) findViewById(id.imageViewFutCardClub_112ST1);
+        FCcountry112ST1 = (ImageView) findViewById(id.imageViewFutCardCountry_112ST1);
+        FCpos112ST1 = (TextView) findViewById(id.textViewFutCardPos_112ST1);
+        FCphoto112ST1 = (ImageView) findViewById(id.imageViewFutCardPhoto_112ST1);
+        FCname112ST1 = (TextView) findViewById(id.textViewFutCardName_112ST1);
 
-        FCscore112ST2 = (TextView) findViewById(R.id.textViewFutCardScore_112ST2);
-        FCclub112ST2 = (ImageView) findViewById(R.id.imageViewFutCardClub_112ST2);
-        FCcountry112ST2 = (ImageView) findViewById(R.id.imageViewFutCardCountry_112ST2);
-        FCpos112ST2 = (TextView) findViewById(R.id.textViewFutCardPos_112ST2);
-        FCphoto112ST2 = (ImageView) findViewById(R.id.imageViewFutCardPhoto_112ST2);
-        FCname112ST2 = (TextView) findViewById(R.id.textViewFutCardName_112ST2);
+        FCscore112ST2 = (TextView) findViewById(id.textViewFutCardScore_112ST2);
+        FCclub112ST2 = (ImageView) findViewById(id.imageViewFutCardClub_112ST2);
+        FCcountry112ST2 = (ImageView) findViewById(id.imageViewFutCardCountry_112ST2);
+        FCpos112ST2 = (TextView) findViewById(id.textViewFutCardPos_112ST2);
+        FCphoto112ST2 = (ImageView) findViewById(id.imageViewFutCardPhoto_112ST2);
+        FCname112ST2 = (TextView) findViewById(id.textViewFutCardName_112ST2);
 
-        FCscore112CM = (TextView) findViewById(R.id.textViewFutCardScore_112CM);
-        FCclub112CM = (ImageView) findViewById(R.id.imageViewFutCardClub_112CM);
-        FCcountry112CM = (ImageView) findViewById(R.id.imageViewFutCardCountry_112CM);
-        FCpos112CM = (TextView) findViewById(R.id.textViewFutCardPos_112CM);
-        FCphoto112CM = (ImageView) findViewById(R.id.imageViewFutCardPhoto_112CM);
-        FCname112CM = (TextView) findViewById(R.id.textViewFutCardName_112CM);
+        FCscore112CM = (TextView) findViewById(id.textViewFutCardScore_112CM);
+        FCclub112CM = (ImageView) findViewById(id.imageViewFutCardClub_112CM);
+        FCcountry112CM = (ImageView) findViewById(id.imageViewFutCardCountry_112CM);
+        FCpos112CM = (TextView) findViewById(id.textViewFutCardPos_112CM);
+        FCphoto112CM = (ImageView) findViewById(id.imageViewFutCardPhoto_112CM);
+        FCname112CM = (TextView) findViewById(id.textViewFutCardName_112CM);
 
-        FCscore112CB = (TextView) findViewById(R.id.textViewFutCardScore_112CB);
-        FCclub112CB = (ImageView) findViewById(R.id.imageViewFutCardClub_112CB);
-        FCcountry112CB = (ImageView) findViewById(R.id.imageViewFutCardCountry_112CB);
-        FCpos112CB = (TextView) findViewById(R.id.textViewFutCardPos_112CB);
-        FCphoto112CB = (ImageView) findViewById(R.id.imageViewFutCardPhoto_112CB);
-        FCname112CB = (TextView) findViewById(R.id.textViewFutCardName_112CB);
+        FCscore112CB = (TextView) findViewById(id.textViewFutCardScore_112CB);
+        FCclub112CB = (ImageView) findViewById(id.imageViewFutCardClub_112CB);
+        FCcountry112CB = (ImageView) findViewById(id.imageViewFutCardCountry_112CB);
+        FCpos112CB = (TextView) findViewById(id.textViewFutCardPos_112CB);
+        FCphoto112CB = (ImageView) findViewById(id.imageViewFutCardPhoto_112CB);
+        FCname112CB = (TextView) findViewById(id.textViewFutCardName_112CB);
 
-        FCscore112GK = (TextView) findViewById(R.id.textViewFutCardScore_112GK);
-        FCclub112GK = (ImageView) findViewById(R.id.imageViewFutCardClub_112GK);
-        FCcountry112GK = (ImageView) findViewById(R.id.imageViewFutCardCountry_112GK);
-        FCpos112GK = (TextView) findViewById(R.id.textViewFutCardPos_112GK);
-        FCphoto112GK = (ImageView) findViewById(R.id.imageViewFutCardPhoto_112GK);
-        FCname112GK = (TextView) findViewById(R.id.textViewFutCardName_112GK);
+        FCscore112GK = (TextView) findViewById(id.textViewFutCardScore_112GK);
+        FCclub112GK = (ImageView) findViewById(id.imageViewFutCardClub_112GK);
+        FCcountry112GK = (ImageView) findViewById(id.imageViewFutCardCountry_112GK);
+        FCpos112GK = (TextView) findViewById(id.textViewFutCardPos_112GK);
+        FCphoto112GK = (ImageView) findViewById(id.imageViewFutCardPhoto_112GK);
+        FCname112GK = (TextView) findViewById(id.textViewFutCardName_112GK);
 
-        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bootom_navigation_112);
+        bottomNavigationView = (BottomNavigationView)findViewById(id.bootom_navigation_112);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
         data = MainActivity.getPlayersDB();
 
         LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver, new IntentFilter("custom-message"));
 
-        CardView cardView112ST1 = (CardView) findViewById(R.id.CardView_112ST1);
+        CardView cardView112ST1 = (CardView) findViewById(id.CardView_112ST1);
         cardView112ST1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,7 +144,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             }
         });
 
-        CardView cardView112ST2 = (CardView) findViewById(R.id.CardView_112ST2);
+        CardView cardView112ST2 = (CardView) findViewById(id.CardView_112ST2);
         cardView112ST2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -145,7 +153,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             }
         });
 
-        CardView cardView112CM = (CardView) findViewById(R.id.CardView_112CM);
+        CardView cardView112CM = (CardView) findViewById(id.CardView_112CM);
         cardView112CM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,7 +162,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             }
         });
 
-        CardView cardView112CB = (CardView) findViewById(R.id.CardView_112CB);
+        CardView cardView112CB = (CardView) findViewById(id.CardView_112CB);
         cardView112CB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,7 +171,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             }
         });
 
-        CardView cardView112GK = (CardView) findViewById(R.id.CardView_112GK);
+        CardView cardView112GK = (CardView) findViewById(id.CardView_112GK);
         cardView112GK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,14 +185,14 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
             switch (item.getItemId()){
-                case R.id.nav_bot_home:
+                case id.nav_bot_home:
                     Toast.makeText(Formation_1_1_2_Activity.this, "home", Toast.LENGTH_SHORT).show();
                     break;
-                case R.id.nav_bot_rez:
+                case id.nav_bot_rez:
 //                    Toast.makeText(Formation_1_1_2_Activity.this, "rezerwa", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(Formation_1_1_2_Activity.this, PlayersBenchActivity.class));
                     break;
-                case R.id.nav_bot_list:
+                case id.nav_bot_list:
                     startActivity(new Intent(Formation_1_1_2_Activity.this, PlayersListActivity.class));
                     break;
             }
@@ -294,6 +302,8 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     for (int i = 0; i < formationListPlayers.size(); i++) {
                         Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
                     }
+
+                    // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
                     refreshLinks();
 
                     break;
@@ -302,6 +312,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
     };
 
     // Metoda liczaca zgranie
+    @SuppressLint("ResourceAsColor")
     public void refreshLinks() {
 
         // Zgrania z pozycji
@@ -332,6 +343,11 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
         formationListPlayers.get(2).calculateChemistryLinks(linkList.get(1), linkList.get(2), linkList.get(3)); // zgranie CM - z polaczen 1,2,3
         formationListPlayers.get(3).calculateChemistryLinks(linkList.get(2), linkList.get(4));
         formationListPlayers.get(4).calculateChemistryLinks(linkList.get(3), linkList.get(4));
+
+        // Kolory polaczen
+        for (int i = 0; i < linkList.size(); i++) {
+            linkList.get(i).setColor();
+        }
 
         for (int i = 0; i < formationListPlayers.size(); i++) {
             Log.d("Test FORMATION:", "Zgranie pilkarzy z polaczen " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistryLinks().toString()+"\n");

@@ -1,11 +1,15 @@
 package pl.wel.wat.edu.footsquadbuilder;
 
+import android.view.View;
+
 public class Link {
 
     private PlayerCard player1;
     private PlayerCard player2;
 
     private Integer link; // sila zgrania
+
+    private View viewLink; // widok kolorowej kreski zgrania
 
     // Gettery i Settery
     public PlayerCard getPlayer1() {
@@ -26,6 +30,12 @@ public class Link {
     public void setLink(Integer link) {
         this.link = link;
     }
+    public View getViewLink() {
+        return viewLink;
+    }
+    public void setViewLink(View viewLink) {
+        this.viewLink = viewLink;
+    }
 
     public void calculateChemistryLink() {
         Integer score = 0;
@@ -41,6 +51,22 @@ public class Link {
             score = 60;
 
         this.link = score;
+    }
+
+    // Metoda ustawiajaca kolory polaczen
+    public void setColor (){
+
+        switch (link) {
+            case 60:
+                viewLink.setBackgroundResource(R.color.green);
+                break;
+             case 30:
+                viewLink.setBackgroundResource(R.color.orange);
+                break;
+             case 0:
+                viewLink.setBackgroundResource(R.color.red);
+                break;
+        }
     }
 
 }
