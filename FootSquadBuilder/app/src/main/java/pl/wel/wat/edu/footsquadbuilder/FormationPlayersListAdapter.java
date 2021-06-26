@@ -2,6 +2,9 @@ package pl.wel.wat.edu.footsquadbuilder;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
@@ -18,6 +22,8 @@ import java.util.List;
 
 public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationPlayersListAdapter.ViewHolder> {
     private List<Player> players;
+
+    private Context context;
 
     public FormationPlayersListAdapter(List<Player> mPlayers) { players = mPlayers; }
 
@@ -46,8 +52,13 @@ public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationP
                 // reakcja
                 int index = holder.getBindingAdapterPosition();
                 Log.d("Test LISTENER:", "Klikniete w pozycje " + index);
-                Player clickedPlayer = HomeActivity.getPlayersRandomizedList().get(index);
-                Log.d("Test LISTENER:", "Wybrany pilkarz: " + HomeActivity.getPlayersBenchList().get(HomeActivity.getPlayersBenchList().size()-1).getName());
+                // wysylanie zawodnika
+                String namePlayerClicked = player.getId().toString();
+                Intent intent = new Intent("custom-message");
+                intent.putExtra("item", namePlayerClicked);
+                LocalBroadcastManager.getInstance(v.getContext()).sendBroadcast(intent);
+
+//                ((FormationPlayersListActivity)context).finish();
             }
         });
 
@@ -280,6 +291,7 @@ public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationP
             textViewFutCardListNameL = (TextView) itemView.findViewById(R.id.textViewFutCardListName);
             textViewFutCardListPosL = (TextView)itemView.findViewById(R.id.textViewFutCardListPos);
             textViewFutCardListScoreL = (TextView)itemView.findViewById(R.id.textViewFutCardListScore);
+
         }
     }
 }
