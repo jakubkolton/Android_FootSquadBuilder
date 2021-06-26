@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +14,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,10 +21,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Formation_1_1_2_Activity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+
+    public static List<PlayerCard> formationListPlayers;
 
     private String cardName;
     private String flag = "";
@@ -178,16 +181,20 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
     };
 
     public BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @SuppressLint("SetTextI18n")
         @Override
         public void onReceive(Context context, Intent intent) {
             String ItemCard = intent.getStringExtra("item");
             Toast.makeText(context, ItemCard + " " + flag, Toast.LENGTH_SHORT).show();
 
+            SetElementCard elementCard = new SetElementCard();
             Integer idClicekCard = Integer.parseInt(ItemCard) - 1;
             Player player = data.get(idClicekCard);
             Context contextPhoto;
             String photoPlayer;
             int idPhoto;
+
+            formationListPlayers = new ArrayList<>();
 
             switch (flag){
                 case "CardView_112ST1":
@@ -197,9 +204,14 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     contextPhoto = FCphoto112ST1.getContext();
                     idPhoto = contextPhoto.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
                     FCphoto112ST1.setImageResource(idPhoto);
-                    setPosCard(player, FCpos112ST1);
-                    setClubCard(player, FCclub112ST1);
-                    setCountryCard(player, FCcountry112ST1);
+                    elementCard.setPosCard(player, FCpos112ST1);
+                    elementCard.setClubCard(player, FCclub112ST1);
+                    elementCard.setCountryCard(player, FCcountry112ST1);
+
+                    Player player112ST1 = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
+                            player.getLeague(), player.getClub(), player.getRating());
+                    PlayerCard playerCard112ST1 = new PlayerCard(player112ST1, 4);
+                    formationListPlayers.add(playerCard112ST1);
                     break;
                 case "CardView_112ST2":
                     FCscore112ST2.setText(Integer.toString(player.getRating()));
@@ -208,9 +220,14 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     contextPhoto = FCphoto112ST2.getContext();
                     idPhoto = contextPhoto.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
                     FCphoto112ST2.setImageResource(idPhoto);
-                    setPosCard(player, FCpos112ST2);
-                    setClubCard(player, FCclub112ST2);
-                    setCountryCard(player, FCcountry112ST2);
+                    elementCard.setPosCard(player, FCpos112ST2);
+                    elementCard.setClubCard(player, FCclub112ST2);
+                    elementCard.setCountryCard(player, FCcountry112ST2);
+
+                    Player player112ST2 = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
+                            player.getLeague(), player.getClub(), player.getRating());
+                    PlayerCard playerCard112ST2 = new PlayerCard(player112ST2, 4);
+                    formationListPlayers.add(playerCard112ST2);
                     break;
                 case "CardView_112CM":
                     FCscore112CM.setText(Integer.toString(player.getRating()));
@@ -219,9 +236,14 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     contextPhoto = FCphoto112CM.getContext();
                     idPhoto = contextPhoto.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
                     FCphoto112CM.setImageResource(idPhoto);
-                    setPosCard(player, FCpos112CM);
-                    setClubCard(player, FCclub112CM);
-                    setCountryCard(player, FCcountry112CM);
+                    elementCard.setPosCard(player, FCpos112CM);
+                    elementCard.setClubCard(player, FCclub112CM);
+                    elementCard.setCountryCard(player, FCcountry112CM);
+
+                    Player player112CM = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
+                            player.getLeague(), player.getClub(), player.getRating());
+                    PlayerCard playerCard112CM = new PlayerCard(player112CM, 3);
+                    formationListPlayers.add(playerCard112CM);
                     break;
                 case "CardView_112CB":
                     FCscore112CB.setText(Integer.toString(player.getRating()));
@@ -230,9 +252,14 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     contextPhoto = FCphoto112CB.getContext();
                     idPhoto = contextPhoto.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
                     FCphoto112CB.setImageResource(idPhoto);
-                    setPosCard(player, FCpos112CB);
-                    setClubCard(player, FCclub112CB);
-                    setCountryCard(player, FCcountry112CB);
+                    elementCard.setPosCard(player, FCpos112CB);
+                    elementCard.setClubCard(player, FCclub112CB);
+                    elementCard.setCountryCard(player, FCcountry112CB);
+
+                    Player player112CB = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
+                            player.getLeague(), player.getClub(), player.getRating());
+                    PlayerCard playerCard112CB = new PlayerCard(player112CB, 2);
+                    formationListPlayers.add(playerCard112CB);
                     break;
                 case "CardView_112GK":
                     FCscore112GK.setText(Integer.toString(player.getRating()));
@@ -241,212 +268,16 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     contextPhoto = FCphoto112GK.getContext();
                     idPhoto = contextPhoto.getResources().getIdentifier(photoPlayer, "drawable", context.getPackageName());
                     FCphoto112GK.setImageResource(idPhoto);
-                    setPosCard(player, FCpos112GK);
-                    setClubCard(player, FCclub112GK);
-                    setCountryCard(player, FCcountry112GK);
+                    elementCard.setPosCard(player, FCpos112GK);
+                    elementCard.setClubCard(player, FCclub112GK);
+                    elementCard.setCountryCard(player, FCcountry112GK);
+
+                    Player player112GK = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
+                            player.getLeague(), player.getClub(), player.getRating());
+                    PlayerCard playerCard112GK = new PlayerCard(player112GK, 1);
+                    formationListPlayers.add(playerCard112GK);
                     break;
             }
         }
     };
-
-    public void setPosCard(Player player, TextView card) {
-        switch (player.getPosition()){
-            case 1:
-                card.setText("GK");
-                break;
-            case 2:
-                card.setText("CB");
-                break;
-            case 3:
-                card.setText("CM");
-                break;
-            case 4:
-                card.setText("ST");
-                break;
-        }
-    }
-
-    public void setClubCard(Player player, ImageView card) {
-        switch (player.getClub()) {
-            case "Angers_SCO":
-                card.setImageResource(R.drawable.angers_sco);
-                break;
-            case "Arsenal":
-                card.setImageResource(R.drawable.arsenal);
-                break;
-            case "AS_Monaco":
-                card.setImageResource(R.drawable.as_monaco);
-                break;
-            case "Atletico ":
-                card.setImageResource(R.drawable.atletico);
-                break;
-            case "Bayern":
-                card.setImageResource(R.drawable.bayern);
-                break;
-            case "Borussia_Dortmund":
-                card.setImageResource(R.drawable.borussia_dortmund);
-                break;
-            case "Borussia_M_gladbach":
-                card.setImageResource(R.drawable.borussia_m_gladbach);
-                break;
-            case "Celta_de_Vigo":
-                card.setImageResource(R.drawable.celta_de_vigo);
-                break;
-            case "Chelsea":
-                card.setImageResource(R.drawable.chelsea);
-                break;
-            case "Eintracht_Frankfurt":
-                card.setImageResource(R.drawable.eintracht_frankfurt);
-                break;
-            case "FC_Barcelona":
-                card.setImageResource(R.drawable.fc_barcelona);
-                break;
-            case "Genoa":
-                card.setImageResource(R.drawable.genoa);
-                break;
-            case "Girondins_de_Bordeaux":
-                card.setImageResource(R.drawable.girondins_de_bordeaux);
-                break;
-            case "Hoffenheim":
-                card.setImageResource(R.drawable.hoffenheim);
-                break;
-            case "Inter":
-                card.setImageResource(R.drawable.inter);
-                break;
-            case "Lazio":
-                card.setImageResource(R.drawable.lazio);
-                break;
-            case "Leicester_City":
-                card.setImageResource(R.drawable.leicester_city);
-                break;
-            case "Liverpool":
-                card.setImageResource(R.drawable.liverpool);
-                break;
-            case "LOSC_Lille":
-                card.setImageResource(R.drawable.losc_lille);
-                break;
-            case "Manchester_City ":
-                card.setImageResource(R.drawable.manchester_city);
-                break;
-            case "Manchester_United":
-                card.setImageResource(R.drawable.manchester_united);
-                break;
-            case "Milan":
-                card.setImageResource(R.drawable.milan);
-                break;
-            case "Napoli":
-                card.setImageResource(R.drawable.napoli);
-                break;
-            case "Olympique_de_Marsille":
-                card.setImageResource(R.drawable.olympique_de_marsille);
-                break;
-            case "Olympique_Lyonnais":
-                card.setImageResource(R.drawable.olympique_lyonnais);
-                break;
-            case "Paris_Saint_Germain":
-                card.setImageResource(R.drawable.paris_saint_germain);
-                break;
-            case "Piemonte_Calcio":
-                card.setImageResource(R.drawable.piemonte_calcio);
-                break;
-            case "RB_Leipzig":
-                card.setImageResource(R.drawable.rb_leipzig);
-                break;
-            case "Real_Madrid":
-                card.setImageResource(R.drawable.real_madrid);
-                break;
-            case "Sassuolo":
-                card.setImageResource(R.drawable.sassuolo);
-                break;
-            case "Sevilla":
-                card.setImageResource(R.drawable.sevilla);
-                break;
-            case "Tottenham_Hotspur":
-                card.setImageResource(R.drawable.tottenham_hotspur);
-                break;
-            case "Vfl_Wolfsburg":
-                card.setImageResource(R.drawable.vfl_wolfsburg);
-                break;
-            case "Villareal":
-                card.setImageResource(R.drawable.villareal);
-                break;
-        }
-    }
-
-    public void setCountryCard(Player player, ImageView card) {
-        switch (player.getNationality()){
-            case "Anglia":
-                card.setImageResource(R.drawable.anglia);
-                break;
-            case "Argentyna":
-                card.setImageResource(R.drawable.argentyna);
-                break;
-            case "Austria":
-                card.setImageResource(R.drawable.austria);
-                break;
-            case "Belgia":
-                card.setImageResource(R.drawable.belgia);
-                break;
-            case "Brazylia":
-                card.setImageResource(R.drawable.brazylia);
-                break;
-            case "Chorwacja":
-                card.setImageResource(R.drawable.chorwacja);
-                break;
-            case "Dania":
-                card.setImageResource(R.drawable.dania);
-                break;
-            case "Francja":
-                card.setImageResource(R.drawable.francja);
-                break;
-            case "Hiszpania":
-                card.setImageResource(R.drawable.hiszpania);
-                break;
-            case "Holandia":
-                card.setImageResource(R.drawable.holandia);
-                break;
-            case "Kongo":
-                card.setImageResource(R.drawable.kongo);
-                break;
-            case "Niemiec":
-                card.setImageResource(R.drawable.niemiec);
-                break;
-            case "Norwegia":
-                card.setImageResource(R.drawable.norwegia);
-                break;
-            case "Polska":
-                card.setImageResource(R.drawable.polska);
-                break;
-            case "Portugalia":
-                card.setImageResource(R.drawable.portugalia);
-                break;
-            case "Senegal":
-                card.setImageResource(R.drawable.senegal);
-                break;
-            case "Serbia":
-                card.setImageResource(R.drawable.serbia);
-                break;
-            case "Slowacja":
-                card.setImageResource(R.drawable.slowacja);
-                break;
-            case "Slowenia":
-                card.setImageResource(R.drawable.slowenia);
-                break;
-            case "Szwajcaria":
-                card.setImageResource(R.drawable.szwajcaria);
-                break;
-            case "Szwecja":
-                card.setImageResource(R.drawable.szwecja);
-                break;
-            case "Urugwaj":
-                card.setImageResource(R.drawable.urugwaj);
-                break;
-            case "Wegry":
-                card.setImageResource(R.drawable.wegry);
-                break;
-            case "Wlochy":
-                card.setImageResource(R.drawable.wlochy);
-                break;
-        }
-    }
 }
