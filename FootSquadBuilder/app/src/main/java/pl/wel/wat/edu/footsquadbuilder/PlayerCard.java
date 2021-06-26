@@ -23,6 +23,12 @@ public class PlayerCard extends Player{
         this.positionSet = positionSet;
     }
 
+    // Konstruktor domyslny w razie w:
+    public PlayerCard() {
+        super(101, "Player", 1, "", "", "", 0);
+        this.positionSet = 9;
+    }
+
 
     // Gettery i Settery
     public Integer getPositionSet() {
@@ -66,7 +72,7 @@ public class PlayerCard extends Player{
         this.chemistryPosition = score;
     }
 
-    // Oblicza zgranie z polaczen; Przeciazenie funkcji dla 3 ilosci polaczen
+    // Oblicza zgranie z polaczen; Przeciazenie funkcji dla 3 roznych ilosci polaczen (1,2,3)
     public void calculateChemistryLinks(Link link1) {
         this.chemistryLinks = link1.getLink();
     }

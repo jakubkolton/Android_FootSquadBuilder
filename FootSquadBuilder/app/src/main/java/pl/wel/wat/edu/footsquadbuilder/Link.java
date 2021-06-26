@@ -30,11 +30,11 @@ public class Link {
     public void calculateChemistryLink() {
         Integer score = 0;
 
-        if(player1.getLeague() == player2.getLeague())
+        if(player1.getLeague().equals(player2.getLeague()))
             score += 30;
-        if (player1.getNationality() == player2.getNationality())
+        if (player1.getNationality().equals(player2.getNationality()))
             score += 30;
-        if (player1.getClub() == player2.getClub())
+        if (player1.getClub().equals(player2.getClub()))
             score += 30;
 
         if (score > 60)
