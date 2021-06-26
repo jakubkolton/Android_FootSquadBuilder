@@ -17,6 +17,12 @@ public class PlayerCard extends Player{
         this.positionSet = positionSet;
     }
 
+    // Konstruktor - wywolywany na obiekcie klasy Player
+    public PlayerCard (Player player, Integer positionSet) {
+        super(player.getId(), player.getName(), player.getPosition(), player.getNationality(), player.getLeague(), player.getClub(), player.getRating());
+        this.positionSet = positionSet;
+    }
+
 
     // Gettery i Settery
     public Integer getPositionSet() {
