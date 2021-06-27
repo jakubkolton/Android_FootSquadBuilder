@@ -298,22 +298,23 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                     PlayerCard playerCard112GK = new PlayerCard(player112GK, 1);
                     formationListPlayers.set(0, playerCard112GK);
 
-                    // Test - zakladam, ze bramkarz bedzie ostatni wybrany
-                    for (int i = 0; i < formationListPlayers.size(); i++) {
-                        Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
-                    }
-
-                    // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
-                    refreshLinks();
 
                     break;
             }
+
+            // Test - zakladam, ze bramkarz bedzie ostatni wybrany
+            for (int i = 0; i < formationListPlayers.size(); i++) {
+                Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
+            }
+
+            // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
+            refreshLinks();
         }
     };
 
     // Metoda liczaca zgranie
     @SuppressLint("ResourceAsColor")
-    public void refreshLinks() {
+    public static void refreshLinks() {
 
         // Zgrania z pozycji
         for (int i = 0; i < formationListPlayers.size(); i++) {

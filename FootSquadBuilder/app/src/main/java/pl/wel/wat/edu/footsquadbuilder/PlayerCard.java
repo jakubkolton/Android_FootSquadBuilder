@@ -1,6 +1,7 @@
 package pl.wel.wat.edu.footsquadbuilder;
 
 import static java.lang.Math.abs;
+import static java.lang.Math.random;
 import static java.lang.Math.round;
 
 public class PlayerCard extends Player{
@@ -23,9 +24,9 @@ public class PlayerCard extends Player{
         this.positionSet = positionSet;
     }
 
-    // Konstruktor domyslny w razie w:
+    // Konstruktor domyslny - wypluwa "smieciowych" pilkarzy, ktorzy raczej nie beda mieli zgrania
     public PlayerCard() {
-        super(101, "Player", 1, "", "", "", 0);
+        super(101, "Player", 6, String.valueOf(random()),  String.valueOf(random()),  String.valueOf(random()), 0);
         this.positionSet = 9;
     }
 
