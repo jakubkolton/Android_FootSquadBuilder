@@ -24,10 +24,13 @@ public class PlayerCard extends Player{
         this.positionSet = positionSet;
     }
 
-    // Konstruktor domyslny - wypluwa "smieciowych" pilkarzy, ktorzy raczej nie beda mieli zgrania
+    // Konstruktor domyslny - wypluwa "smieciowych" pilkarzy, ktorzy nie beda mieli zgrania
     public PlayerCard() {
         super(101, "Player", 6, String.valueOf(random()),  String.valueOf(random()),  String.valueOf(random()), 0);
         this.positionSet = 9;
+        this.setChemistryPosition(0);
+        this.setChemistryLinks(0);
+        this.setChemistry(0);
     }
 
 
@@ -86,5 +89,10 @@ public class PlayerCard extends Player{
         Integer score = (int) round((link1.getLink() + link2.getLink() + link3.getLink())/3.0);
 
         this.chemistryLinks = score;
+    }
+
+    // Oblicza calkowite zgranie karty (0-100)
+    public void calculateChemistryTotal() {
+        this.chemistry = this.chemistryLinks + this.chemistryPosition;
     }
 }

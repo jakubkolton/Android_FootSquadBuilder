@@ -25,11 +25,16 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Math.round;
+
 public class Formation_2_1_1_Activity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
     public static List<PlayerCard> formationListPlayers;
     public static List<Link> linkList; // lista zgran
+
+    private static Integer squadRating = 0;
+    private static Integer squadChemistry = 0;
 
     private String cardName;
     private String flag = "";
@@ -305,13 +310,13 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
             }
 
             // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
-            refreshLinks();
+            refreshLinksAndRating();
         }
     };
 
     // Metoda liczaca zgranie
     @SuppressLint("ResourceAsColor")
-    public void refreshLinks() {
+    public static void refreshLinksAndRating() {
 
         // Zgrania z pozycji
         for (int i = 0; i < formationListPlayers.size(); i++) {
@@ -359,6 +364,24 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
         }
 
         // ---------------------------------------------------------------
+
+        // Zgranie calkowite pilkarza
+        for (int i = 0; i < formationListPlayers.size(); i++) {
+            formationListPlayers.get(i).calculateChemistryTotal();
+            Log.d("Test FORMATION:", "Zgranie calkowite pilkarza " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistry().toString()+"\n");
+        }
+
+        // Zgranie i ocena zespolu
+        squadRating = 0;
+        squadChemistry = 0;
+        for (int i = 0; i < formationListPlayers.size(); i++) {
+            squadRating +=  formationListPlayers.get(i).getRating();
+            squadChemistry +=  formationListPlayers.get(i).getChemistry();
+        }
+        squadRating = (int)round((double)squadRating/5.0);
+        squadChemistry = (int)round(squadChemistry/5.0);
+        Log.d("Test FORMATION:", "Ocena zespolu: " + squadRating.toString()+"\n");
+        Log.d("Test FORMATION:", "Zgranie zespolu: " + squadChemistry.toString()+"\n");
 
     }
 }
