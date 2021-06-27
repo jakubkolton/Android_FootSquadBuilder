@@ -32,7 +32,7 @@ public class SetElementCard {
             case "AS_Monaco":
                 card.setImageResource(R.drawable.as_monaco);
                 break;
-            case "Atletico ":
+            case "Atletico":
                 card.setImageResource(R.drawable.atletico);
                 break;
             case "Bayern":
@@ -80,7 +80,7 @@ public class SetElementCard {
             case "LOSC_Lille":
                 card.setImageResource(R.drawable.losc_lille);
                 break;
-            case "Manchester_City ":
+            case "Manchester_City":
                 card.setImageResource(R.drawable.manchester_city);
                 break;
             case "Manchester_United":

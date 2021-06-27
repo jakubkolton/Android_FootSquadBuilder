@@ -14,6 +14,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121ST"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
@@ -125,6 +126,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CM1"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp">
 
@@ -216,6 +218,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CM2"
+            android:clickable="true"
             style="@style/FutCard">
 
             <LinearLayout
@@ -327,6 +330,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121CB"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
@@ -433,6 +437,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView_121GK"
             style="@style/FutCard"
+            android:clickable="true"
             android:layout_gravity="center_horizontal">
 
             <LinearLayout

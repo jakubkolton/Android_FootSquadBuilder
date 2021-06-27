@@ -215,8 +215,6 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             int idPhoto;
 
 
-
-
             switch (flag){
                 case "CardView_112ST1":
                     FCscore112ST1.setText(Integer.toString(player.getRating()));
