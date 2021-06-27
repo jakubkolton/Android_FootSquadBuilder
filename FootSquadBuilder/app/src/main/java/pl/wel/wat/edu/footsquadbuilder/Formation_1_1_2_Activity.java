@@ -305,8 +305,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
                 Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
             }
 
-            // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
-            refreshLinks();
+            refreshLinks(); // odswiezenie danych o zgraniu po kazdej zmianie w skladzie
         }
     };
 
@@ -355,8 +354,6 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
         for (int i = 0; i < linkList.size(); i++) {
             Log.d("Test FORMATION:", "Sila polaczenia " + Integer.toString(i) + ": " + linkList.get(i).getLink().toString()+"\n");
         }
-
-
 
         // ---------------------------------------------------------------
 

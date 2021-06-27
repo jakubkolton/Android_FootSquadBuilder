@@ -103,6 +103,7 @@
             android:orientation="horizontal">
 
             <View
+                android:id="@+id/link_211_5"
                 android:layout_width="3dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="195dp"
@@ -209,12 +210,14 @@
             android:orientation="horizontal">
 
             <View
+                android:id="@+id/link_211_3"
                 android:layout_width="3dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="145dp"
                 android:background="@android:color/black"/>
 
             <View
+                android:id="@+id/link_211_4"
                 android:layout_width="3dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="100dp"
@@ -319,6 +322,7 @@
         </androidx.cardview.widget.CardView>
 
         <View
+            android:id="@+id/link_211_2"
             android:layout_width="50dp"
             android:layout_height="3dp"
             android:layout_marginTop="80dp"
@@ -423,12 +427,14 @@
             android:orientation="horizontal">
 
             <View
+                android:id="@+id/link_211_0"
                 android:layout_width="3dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="145dp"
                 android:background="@android:color/black"/>
 
             <View
+                android:id="@+id/link_211_1"
                 android:layout_width="3dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="100dp"

@@ -78,20 +78,23 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formation121);
 
-        // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 5-elementowa na 5 linii zgrania
+        // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 6-elementowa na 6 linii zgrania
         formationListPlayers = new ArrayList<>(5);
-        linkList = new ArrayList<>(5);
+        linkList = new ArrayList<>(6);
         for (int i = 0; i < 5; i++) {
             formationListPlayers.add(new PlayerCard());
             linkList.add(new Link());
         }
+        linkList.add(new Link());
+
         // Przypisanie widokow z liniami do linii zgrania
-        // przypisz Id po swojemu do tych kresek
-//        linkList.get(0).setViewLink(findViewById(R.id.link_112_0));
-//        linkList.get(1).setViewLink(findViewById(R.id.link_112_1));
-//        linkList.get(2).setViewLink(findViewById(R.id.link_112_2));
-//        linkList.get(3).setViewLink(findViewById(R.id.link_112_3));
-//        linkList.get(4).setViewLink(findViewById(R.id.link_112_4));
+        linkList.get(0).setViewLink(findViewById(R.id.link_121_0));
+        linkList.get(1).setViewLink(findViewById(R.id.link_121_1));
+        linkList.get(2).setViewLink(findViewById(R.id.link_121_2));
+        linkList.get(3).setViewLink(findViewById(R.id.link_121_3));
+        linkList.get(4).setViewLink(findViewById(R.id.link_121_4));
+        linkList.get(5).setViewLink(findViewById(R.id.link_121_5));
+
 
         FCscore121ST = (TextView) findViewById(R.id.textViewFutCardScore_121ST);
         FCclub121ST = (ImageView) findViewById(R.id.imageViewFutCardClub_121ST);
@@ -230,7 +233,7 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
                     Player player121ST = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
                             player.getLeague(), player.getClub(), player.getRating());
                     PlayerCard playerCard121ST = new PlayerCard(player121ST, 4);
-                    formationListPlayers.set(3, playerCard121ST);
+                    formationListPlayers.set(4, playerCard121ST);
                     break;
                 case "CardView_121CM1":
                     FCscore121CM1.setText(Integer.toString(player.getRating()));
@@ -246,7 +249,7 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
                     Player player121CM1 = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
                             player.getLeague(), player.getClub(), player.getRating());
                     PlayerCard playerCard121CM1 = new PlayerCard(player121CM1, 4);
-                    formationListPlayers.set(4, playerCard121CM1);
+                    formationListPlayers.set(2, playerCard121CM1);
                     break;
                 case "CardView_121CM2":
                     FCscore121CM2.setText(Integer.toString(player.getRating()));
@@ -262,7 +265,7 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
                     Player player121CM2 = new Player(idClicekCard, player.getName(), player.getPosition(), player.getNationality(),
                             player.getLeague(), player.getClub(), player.getRating());
                     PlayerCard playerCard121CM2 = new PlayerCard(player121CM2, 3);
-                    formationListPlayers.set(2, playerCard121CM2);
+                    formationListPlayers.set(3, playerCard121CM2);
                     break;
                 case "CardView_121CB":
                     FCscore121CB.setText(Integer.toString(player.getRating()));
@@ -296,16 +299,17 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
                     PlayerCard playerCard121GK = new PlayerCard(player121GK, 1);
                     formationListPlayers.set(0, playerCard121GK);
 
-                    // Test - zakladam, ze bramkarz bedzie ostatni wybrany
-                    for (int i = 0; i < formationListPlayers.size(); i++) {
-                        Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
-                    }
-
-                    // POWINNO SIE TO WSZYSTKO ODSWIEZACZ CZESCIEJ
-                    refreshLinks();
 
                     break;
             }
+
+            // Test - zakladam, ze bramkarz bedzie ostatni wybrany
+            for (int i = 0; i < formationListPlayers.size(); i++) {
+                Log.d("Test LINK:", formationListPlayers.get(i).getName()+"\n");
+            }
+
+            refreshLinks(); // odswiezenie danych o zgraniu po kazdej zmianie w skladzie
+
         }
     };
 
@@ -313,49 +317,50 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
     @SuppressLint("ResourceAsColor")
     public void refreshLinks() {
 
-        // Zgrania z pozycji
-//        for (int i = 0; i < formationListPlayers.size(); i++) {
-//            formationListPlayers.get(i).calculateChemistryPosition();
-//            Log.d("Test FORMATION:", "Zgranie z pozycji " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistryPosition().toString()+"\n");
-//        }
+//         Zgrania z pozycji
+        for (int i = 0; i < formationListPlayers.size(); i++) {
+            formationListPlayers.get(i).calculateChemistryPosition();
+            Log.d("Test FORMATION:", "Zgranie z pozycji " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistryPosition().toString()+"\n");
+        }
 
-        // Zgrania z polaczen ---------------------------------------------------------------
-//        linkList.get(0).setPlayer1(formationListPlayers.get(0)); // polaczenie 0 - GK
-//        linkList.get(0).setPlayer2(formationListPlayers.get(1)); // polaczenie 0 - CB
-//        linkList.get(0).calculateChemistryLink(); // liczy zgranie z polaczenia
-//        linkList.get(1).setPlayer1(formationListPlayers.get(1)); // polaczenie 1 - CB
-//        linkList.get(1).setPlayer2(formationListPlayers.get(2)); // polaczenie 1 - CM
-//        linkList.get(1).calculateChemistryLink(); // liczy zgranie z polaczenia
-//        linkList.get(2).setPlayer1(formationListPlayers.get(2));
-//        linkList.get(2).setPlayer2(formationListPlayers.get(3));
-//        linkList.get(2).calculateChemistryLink();
-//        linkList.get(3).setPlayer1(formationListPlayers.get(2));
-//        linkList.get(3).setPlayer2(formationListPlayers.get(4));
-//        linkList.get(3).calculateChemistryLink();
-//        linkList.get(4).setPlayer1(formationListPlayers.get(3));
-//        linkList.get(4).setPlayer2(formationListPlayers.get(4));
-//        linkList.get(4).calculateChemistryLink();
-//
-//        formationListPlayers.get(0).calculateChemistryLinks(linkList.get(0)); // zgranie GK - z polaczenia 0
-//        formationListPlayers.get(1).calculateChemistryLinks(linkList.get(0), linkList.get(1)); // zgranie CB - z polaczen 0 i 1
-//        formationListPlayers.get(2).calculateChemistryLinks(linkList.get(1), linkList.get(2), linkList.get(3)); // zgranie CM - z polaczen 1,2,3
-//        formationListPlayers.get(3).calculateChemistryLinks(linkList.get(2), linkList.get(4));
-//        formationListPlayers.get(4).calculateChemistryLinks(linkList.get(3), linkList.get(4));
-//
-//        // Kolory polaczen
-//        for (int i = 0; i < linkList.size(); i++) {
-//            linkList.get(i).setColor();
-//        }
-//
-//        for (int i = 0; i < formationListPlayers.size(); i++) {
-//            Log.d("Test FORMATION:", "Zgranie pilkarzy z polaczen " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistryLinks().toString()+"\n");
-//        }
-//
-//        for (int i = 0; i < linkList.size(); i++) {
-//            Log.d("Test FORMATION:", "Sila polaczenia " + Integer.toString(i) + ": " + linkList.get(i).getLink().toString()+"\n");
-//        }
+//         Zgrania z polaczen ---------------------------------------------------------------
+        linkList.get(0).setPlayer1(formationListPlayers.get(0)); // polaczenie 0 - GK
+        linkList.get(0).setPlayer2(formationListPlayers.get(1)); // polaczenie 0 - CB
+        linkList.get(0).calculateChemistryLink(); // liczy zgranie z polaczenia
+        linkList.get(1).setPlayer1(formationListPlayers.get(1)); // polaczenie 1 - CB
+        linkList.get(1).setPlayer2(formationListPlayers.get(2)); // polaczenie 1 - CM lewy
+        linkList.get(1).calculateChemistryLink(); // liczy zgranie z polaczenia
+        linkList.get(2).setPlayer1(formationListPlayers.get(1));
+        linkList.get(2).setPlayer2(formationListPlayers.get(3));
+        linkList.get(2).calculateChemistryLink();
+        linkList.get(3).setPlayer1(formationListPlayers.get(2));
+        linkList.get(3).setPlayer2(formationListPlayers.get(3));
+        linkList.get(3).calculateChemistryLink();
+        linkList.get(4).setPlayer1(formationListPlayers.get(2));
+        linkList.get(4).setPlayer2(formationListPlayers.get(4));
+        linkList.get(4).calculateChemistryLink();
+        linkList.get(5).setPlayer1(formationListPlayers.get(3));
+        linkList.get(5).setPlayer2(formationListPlayers.get(4));
+        linkList.get(5).calculateChemistryLink();
 
+        formationListPlayers.get(0).calculateChemistryLinks(linkList.get(0)); // zgranie GK - z polaczenia 0
+        formationListPlayers.get(1).calculateChemistryLinks(linkList.get(0), linkList.get(1), linkList.get(2)); // zgranie CB - z polaczen 0, 1, 2
+        formationListPlayers.get(2).calculateChemistryLinks(linkList.get(1), linkList.get(3), linkList.get(3)); // zgranie CM lewy - z polaczen 1,3,4
+        formationListPlayers.get(3).calculateChemistryLinks(linkList.get(2), linkList.get(3), linkList.get(5)); // zgranie CM prawy - z polaczen 2,3,5
+        formationListPlayers.get(4).calculateChemistryLinks(linkList.get(4), linkList.get(5));
 
+        // Kolory polaczen
+        for (int i = 0; i < linkList.size(); i++) {
+            linkList.get(i).setColor();
+        }
+
+        for (int i = 0; i < formationListPlayers.size(); i++) {
+            Log.d("Test FORMATION:", "Zgranie pilkarzy z polaczen " + Integer.toString(i) + ": " + formationListPlayers.get(i).getChemistryLinks().toString()+"\n");
+        }
+
+        for (int i = 0; i < linkList.size(); i++) {
+            Log.d("Test FORMATION:", "Sila polaczenia " + Integer.toString(i) + ": " + linkList.get(i).getLink().toString()+"\n");
+        }
 
         // ---------------------------------------------------------------
 
