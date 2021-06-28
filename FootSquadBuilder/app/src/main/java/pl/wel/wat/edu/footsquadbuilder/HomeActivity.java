@@ -8,6 +8,7 @@ import android.view.Menu;
 
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
@@ -223,4 +224,11 @@ public class HomeActivity extends AppCompatActivity {
     public static List<Player> getPlayersRandomizedList() {
         return playersRandomizedList;
     }
+
+    // Resetuje gre po cofnieciu z tej aktywnosc - pozwala zaczac zabawe od nowa
+    @Override
+    public void onBackPressed() {
+        onDestroy();
+    }
+
 }

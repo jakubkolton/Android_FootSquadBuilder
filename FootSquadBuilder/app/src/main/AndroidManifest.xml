@@ -18,7 +18,7 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.FootSquadBuilder.NoActionBar" />
+            android:theme="@style/Theme.FootSquadBuilder.NoActionBar"/>
         <activity android:name=".About_Program_Activity" />
         <activity android:name=".Formation_1_2_1_Activity" />
         <activity android:name=".MainActivity">
