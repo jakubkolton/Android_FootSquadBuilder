@@ -228,7 +228,12 @@ public class HomeActivity extends AppCompatActivity {
     // Resetuje gre po cofnieciu z tej aktywnosc - pozwala zaczac zabawe od nowa
     @Override
     public void onBackPressed() {
-        onDestroy();
+        super.onBackPressed();
+
+        // czyszczenie danych gry
+        playersBenchList.clear();
+        playersRandomizedList.clear();
+        noRandomization = 1;
     }
 
 }
