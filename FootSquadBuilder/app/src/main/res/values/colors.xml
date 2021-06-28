@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cardPlayer">#E6E3C9</color>
     <color name="MainScreen">#80C568</color>
+    <color name="Namelogo">#307518</color>
+    <color name="buttonstart">#588C46</color>
+    <color name="tlo">#004D40</color>
     <color name="grey">#BDBDBD</color>
     <color name="cardSum">#9963F8</color>
 

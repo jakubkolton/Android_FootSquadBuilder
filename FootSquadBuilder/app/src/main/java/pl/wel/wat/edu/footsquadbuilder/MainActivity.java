@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 100; i++) {
             Log.d("Proba:", playersDB.get(i).getName());
         }
+//animacja logo
+            YoYo.with(Techniques.SlideInUp)
+                    .duration(2137)
+                    .playOn(findViewById(R.id.textView));
     }
 
     public static List<Player> getPlayersDB() {
@@ -138,6 +145,4 @@ public class MainActivity extends AppCompatActivity {
             Log.d("JSONException | IOException", "addItemsFromJSON: ", e);
         }
     }
-
-
 }

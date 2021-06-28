@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView"
@@ -18,18 +19,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/baseline_assignment_returned_black_48dp"
+            app:srcCompat="@drawable/football"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
+            android:fontFamily="sans-serif-medium"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:textSize="20sp"
+            android:textSize="30sp"
+            android:textColor="@color/Namelogo"
             android:text="@string/app_name"
-            android:layout_gravity="center"
-            app:layout_constraintBottom_toBottomOf="@+id/ImageView"/>
+            android:layout_gravity="center_horizontal" />
     </androidx.cardview.widget.CardView>
 
     <EditText
@@ -39,7 +41,8 @@
         android:layout_margin="20dp"
         android:hint="@string/name" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:backgroundTint="@color/buttonstart"
         android:id="@+id/buttonStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
