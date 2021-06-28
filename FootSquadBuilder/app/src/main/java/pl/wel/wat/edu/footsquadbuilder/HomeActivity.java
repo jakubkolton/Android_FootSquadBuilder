@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static java.lang.Math.random;
@@ -165,6 +166,7 @@ public class HomeActivity extends AppCompatActivity {
                 playersRandomizedList.add(randomPlayer);
             }
         } else { // koniec procedury
+            sortPlayersBenchList();
             for (int i = 0; i < playersBenchList.size(); i++) {
                 Log.d("Test RANDOMIZATION:", playersBenchList.get(i).getName());
             }
@@ -193,6 +195,25 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         return false;
+    }
+
+    // Metoda sortujaca liste rezerwowych wg pozycji
+    public static void sortPlayersBenchList() {
+
+        // Sortowanie babelkowe
+        boolean sorted = false;
+        Player temp = new Player();
+        while(!sorted) {
+            sorted = true;
+            for (int i = 0; i < playersBenchList.size() - 1; i++) {
+                if (playersBenchList.get(i).getPosition() > playersBenchList.get(i+1).getPosition()) {
+                    temp = playersBenchList.get(i);
+                    playersBenchList.set(i, playersBenchList.get(i+1));
+                    playersBenchList.set(i+1, temp);
+                    sorted = false;
+                }
+            }
+        }
     }
 
     public static List<Player> getPlayersBenchList() {
