@@ -3,9 +3,12 @@ package pl.wel.wat.edu.footsquadbuilder;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,18 +24,41 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static List<Player> playersDB = new ArrayList<>(); // czy to nie powinno byc static, zeby bylo dostepne wszedzie?
+    private static List<Player> playersDB = new ArrayList<>();
+
+    // Shared preferences na imie gracza
+    public static String NAZWA_PLIKU = "sharedName"; // nazwa pliku przechowujacego dane
+    public static String NAME = "name"; // zmienna, kontener na dane - imie
+    public static SharedPreferences sharedName;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Odczyt imienia z Shared Preferences
+        EditText editTextImie = (EditText)findViewById(R.id.EditTextImie); // czasem trzeba dodac final
+        sharedName = getSharedPreferences(MainActivity.NAZWA_PLIKU, MODE_PRIVATE);
+        String name = sharedName.getString(MainActivity.NAME, "");
+        if (name.length() != 0) { // jesli odczytano imie z SharedPreferences
+            editTextImie.setText(name);
+        }
+
         View startButton = findViewById(R.id.buttonStart);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+
+                if(editTextImie.length() != 0) { // Jesli podano imie, zapisz je w SharedPreferences i uruchom kolejna aktywnosc
+                    SharedPreferences.Editor editor = sharedName.edit();
+                    editor.putString(NAME, editTextImie.getText().toString());
+                    editor.apply();
+
+                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                } else {
+                    Toast.makeText(getApplicationContext(), "Podaj imię!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

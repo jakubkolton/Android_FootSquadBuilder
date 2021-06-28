@@ -33,10 +33,11 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:id="@+id/EditTextImie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="@string/name"/>
+        android:hint="@string/name" />
 
     <Button
         android:id="@+id/buttonStart"

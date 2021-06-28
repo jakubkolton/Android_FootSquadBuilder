@@ -10,6 +10,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -376,6 +377,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
         }
         squadRating = (int)round((double)squadRating/5.0);
         squadChemistry = (int)round(squadChemistry/5.0);
+        Log.d("Test FORMATION:", "Imie gracza: " + MainActivity.sharedName.getString(MainActivity.NAME, "") +"\n");
         Log.d("Test FORMATION:", "Ocena zespolu: " + squadRating.toString()+"\n");
         Log.d("Test FORMATION:", "Zgranie zespolu: " + squadChemistry.toString()+"\n");
     }

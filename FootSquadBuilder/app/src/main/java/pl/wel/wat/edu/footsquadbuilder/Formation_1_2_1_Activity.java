@@ -381,6 +381,7 @@ public class Formation_1_2_1_Activity extends AppCompatActivity {
         }
         squadRating = (int)round((double)squadRating/5.0);
         squadChemistry = (int)round(squadChemistry/5.0);
+        Log.d("Test FORMATION:", "Imie gracza: " + MainActivity.sharedName.getString(MainActivity.NAME, "") +"\n");
         Log.d("Test FORMATION:", "Ocena zespolu: " + squadRating.toString()+"\n");
         Log.d("Test FORMATION:", "Zgranie zespolu: " + squadChemistry.toString()+"\n");
 
