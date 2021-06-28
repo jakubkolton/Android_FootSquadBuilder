@@ -91,7 +91,7 @@
   },
   {
     "id": "11",
-    "name": "Oblak ",
+    "name": "Oblak",
     "position": "1",
     "nationality": "Slowenia",
     "league": "Primera_Division",
@@ -239,7 +239,7 @@
     "position": "2",
     "nationality": "Hiszpania",
     "league": "Premier_League",
-    "club": "Manchester_City ",
+    "club": "Manchester_City",
     "rating": "86"
   },
   {
@@ -428,7 +428,7 @@
     "position": "2",
     "nationality": "Belgia",
     "league": "Ligue_1",
-    "club": " Olympique_Lyonnais",
+    "club": "Olympique_Lyonnais",
     "rating": "80"
   },
   {
@@ -716,7 +716,7 @@
     "position": "3",
     "nationality": "Portugalia",
     "league": "Premier_League",
-    "club": "Manchester_City ",
+    "club": "Manchester_City",
     "rating": "86"
   },
   {

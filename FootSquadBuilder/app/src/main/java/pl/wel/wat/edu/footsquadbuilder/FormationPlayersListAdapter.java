@@ -97,7 +97,7 @@ public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationP
             case "AS_Monaco":
                 imageViewFutCardListClubH.setImageResource(R.drawable.as_monaco);
                 break;
-            case "Atletico ":
+            case "Atletico":
                 imageViewFutCardListClubH.setImageResource(R.drawable.atletico);
                 break;
             case "Bayern":
@@ -145,7 +145,7 @@ public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationP
             case "LOSC_Lille":
                 imageViewFutCardListClubH.setImageResource(R.drawable.losc_lille);
                 break;
-            case "Manchester_City ":
+            case "Manchester_City":
                 imageViewFutCardListClubH.setImageResource(R.drawable.manchester_city);
                 break;
             case "Manchester_United":
