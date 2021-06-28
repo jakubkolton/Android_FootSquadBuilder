@@ -59,6 +59,7 @@ public class FormationPlayersListAdapter extends RecyclerView.Adapter<FormationP
                 LocalBroadcastManager.getInstance(v.getContext()).sendBroadcast(intent);
 
 //                ((FormationPlayersListActivity)context).finish();
+                
             }
         });
 
