@@ -40,6 +40,10 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
     private String flag = "";
     private List<Player> data;
 
+    TextView NamePlayer211;
+    TextView ScoreSquad211;
+    TextView ScoreChemistry211;
+
     TextView FCscore211ST;
     ImageView FCclub211ST;
     ImageView FCcountry211ST;
@@ -79,6 +83,12 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formation211);
+
+        NamePlayer211 = (TextView) findViewById(R.id.textViewFutCardName_211Sum);
+        ScoreSquad211 = (TextView) findViewById(R.id.textViewFutCardSquad_211Sum);
+        ScoreChemistry211 = (TextView) findViewById(R.id.textViewFutCardSquadSum_211Sum);
+
+        NamePlayer211.setText(MainActivity.sharedName.getString(MainActivity.NAME, ""));
 
         // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 6-elementowa na 6 linii zgrania
         formationListPlayers = new ArrayList<>(5);

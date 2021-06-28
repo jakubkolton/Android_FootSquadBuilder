@@ -10,6 +10,7 @@
     <color name="cardPlayer">#E6E3C9</color>
     <color name="MainScreen">#80C568</color>
     <color name="grey">#BDBDBD</color>
+    <color name="cardSum">#9963F8</color>
 
     <color name="red">#FFFF0000</color>
     <color name="orange">#F2F838</color>
