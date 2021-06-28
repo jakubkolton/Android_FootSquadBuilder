@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +44,8 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
     private List<Player> data;
 
     TextView NamePlayer112;
-    TextView ScoreSquad112;
-    TextView ScoreChemistry112;
+    private static TextView ScoreSquad112;
+    private static TextView ScoreChemistry112;
 
     TextView FCscore112ST1;
     ImageView FCclub112ST1;
@@ -91,6 +92,8 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
         ScoreChemistry112 = (TextView) findViewById(R.id.textViewFutCardSquadSum_112Sum);
 
         NamePlayer112.setText(MainActivity.sharedName.getString(MainActivity.NAME, ""));
+        ScoreSquad112.setText("Ocena: " + "0");
+        ScoreChemistry112.setText("Zgranie: " + "0");
 
         // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 5-elementowa na 5 linii zgrania
         formationListPlayers = new ArrayList<>(5);
@@ -99,6 +102,7 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             formationListPlayers.add(new PlayerCard());
             linkList.add(new Link());
         }
+
         // Przypisanie widokow z liniami do linii zgrania
         linkList.get(0).setViewLink(findViewById(id.link_112_0));
         linkList.get(1).setViewLink(findViewById(id.link_112_1));
@@ -385,7 +389,9 @@ public class Formation_1_1_2_Activity extends AppCompatActivity {
             squadChemistry +=  formationListPlayers.get(i).getChemistry();
         }
         squadRating = (int)round((double)squadRating/5.0);
+        ScoreSquad112.setText("Ocena: " + squadRating.toString());
         squadChemistry = (int)round(squadChemistry/5.0);
+        ScoreChemistry112.setText("Zgranie: " + squadChemistry.toString());
         Log.d("Test FORMATION:", "Imie gracza: " + MainActivity.sharedName.getString(MainActivity.NAME, "") +"\n");
         Log.d("Test FORMATION:", "Ocena zespolu: " + squadRating.toString()+"\n");
         Log.d("Test FORMATION:", "Zgranie zespolu: " + squadChemistry.toString()+"\n");

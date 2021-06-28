@@ -19,8 +19,8 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="name_player">Nazwa</string>
-    <string name="score_squad">Ocena</string>
-    <string name="score_chem">Zgranie</string>
+    <string name="score_squad">Ocena: </string>
+    <string name="score_chem">Zgranie: </string>
 
     <string name="about">O programie</string>
     <string name="formacja121">Formacja 1-2-1</string>

@@ -41,8 +41,8 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
     private List<Player> data;
 
     TextView NamePlayer211;
-    TextView ScoreSquad211;
-    TextView ScoreChemistry211;
+    private static TextView ScoreSquad211;
+    private static TextView ScoreChemistry211;
 
     TextView FCscore211ST;
     ImageView FCclub211ST;
@@ -89,6 +89,8 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
         ScoreChemistry211 = (TextView) findViewById(R.id.textViewFutCardSquadSum_211Sum);
 
         NamePlayer211.setText(MainActivity.sharedName.getString(MainActivity.NAME, ""));
+        ScoreSquad211.setText("Ocena: " + "0");
+        ScoreChemistry211.setText("Zgranie: " + "0");
 
         // pusta lista 5-elementowa na 5 zawodnikow na boisku i pusta lista 6-elementowa na 6 linii zgrania
         formationListPlayers = new ArrayList<>(5);
@@ -389,7 +391,9 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
             squadChemistry +=  formationListPlayers.get(i).getChemistry();
         }
         squadRating = (int)round((double)squadRating/5.0);
+        ScoreSquad211.setText("Ocena: " + squadRating.toString());
         squadChemistry = (int)round(squadChemistry/5.0);
+        ScoreChemistry211.setText("Zgranie: " + squadChemistry.toString());
         Log.d("Test FORMATION:", "Imie gracza: " + MainActivity.sharedName.getString(MainActivity.NAME, "") +"\n");
         Log.d("Test FORMATION:", "Ocena zespolu: " + squadRating.toString()+"\n");
         Log.d("Test FORMATION:", "Zgranie zespolu: " + squadChemistry.toString()+"\n");
