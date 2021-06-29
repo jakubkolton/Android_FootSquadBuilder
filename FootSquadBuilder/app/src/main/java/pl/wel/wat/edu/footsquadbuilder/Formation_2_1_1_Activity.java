@@ -222,7 +222,7 @@ public class Formation_2_1_1_Activity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String ItemCard = intent.getStringExtra("item");
-            Toast.makeText(context, ItemCard + " " + flag, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(context, ItemCard + " " + flag, Toast.LENGTH_SHORT).show();
 
             SetElementCard elementCard = new SetElementCard();
             Integer idClicekCard = Integer.parseInt(ItemCard) - 1;

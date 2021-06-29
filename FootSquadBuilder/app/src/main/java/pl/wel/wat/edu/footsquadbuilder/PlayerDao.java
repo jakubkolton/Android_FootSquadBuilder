@@ -9,8 +9,6 @@ import java.util.List;
 @Dao
 public interface PlayerDao {
 
-    //  ???     Czy to zapytanie powinno miec Players moze, tak jak w pliku JSON    ???
-    // Chyba jednak Player, bo to ma byc nazwa klasy
     @Query("Select * FROM Player")
     List<Player> getAll();
 

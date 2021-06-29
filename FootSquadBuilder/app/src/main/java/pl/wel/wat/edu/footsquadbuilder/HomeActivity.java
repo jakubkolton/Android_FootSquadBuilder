@@ -79,9 +79,7 @@ public class HomeActivity extends AppCompatActivity {
 
         playersBenchList = new ArrayList<>();
         playersRandomizedList = new ArrayList<>();
-        // testy
-//        Player testowy = MainActivity.getPlayersDB().get(1);
-//        playersBenchList.add(testowy);
+
 
         playersListAdapter = new PlayersListAdapter(playersRandomizedList);
         RecyclerView rvPlayers = (RecyclerView)findViewById(R.id.rvPlayersRandomizedList_view);
@@ -121,7 +119,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     // Metoda procedury losujacej 10 zawodnikow
-    // PAMIETAC O SPRAWDZENIU ID-KOW PILKARZY, ZEBY SIE DUBLOWALI
     // no - numer losowanie 3-elementowego
     public static void playersRandomization(int no) {
 
@@ -162,8 +159,10 @@ public class HomeActivity extends AppCompatActivity {
             }
         } else if (noRandomization <= 10) { // 2 kolejne losowania na dowolna pozycje
             for (int k = 0; k < 3; k++) {
-                ID = (int) (random() * 99 + 1);
-                randomPlayer = MainActivity.getPlayersDB().get(ID-1);
+                do {
+                    ID = (int) (random() * 99 + 1);
+                    randomPlayer = MainActivity.getPlayersDB().get(ID-1);
+                } while ((isAlreadyPicked(ID)) || (isAlreadyRandomized(ID)));
                 playersRandomizedList.add(randomPlayer);
             }
         } else { // koniec procedury

@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 100; i++) {
             Log.d("Proba:", playersDB.get(i).getName());
         }
-//animacja logo
+
+        //animacja logo
             YoYo.with(Techniques.SlideInUp)
                     .duration(2137)
                     .playOn(findViewById(R.id.textView));
@@ -92,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
             inputStream = getResources().openRawResource(R.raw.player_json_database);
             BufferedReader bufferedReader = null;
             try {
-//                bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
                 bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "windows-1250"));
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
