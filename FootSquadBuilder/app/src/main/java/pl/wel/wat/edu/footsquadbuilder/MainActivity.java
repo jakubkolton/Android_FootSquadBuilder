@@ -144,5 +144,27 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException | IOException e) {
             Log.d("JSONException | IOException", "addItemsFromJSON: ", e);
         }
+
+        // sortowanie bazy danych wg pozycji
+        sortPlayersDatabase();
+    }
+
+    // Metoda sortujaca liste rezerwowych wg pozycji
+    public static void sortPlayersDatabase() {
+
+        // Sortowanie babelkowe
+        boolean sorted = false;
+        Player temp = new Player();
+        while(!sorted) {
+            sorted = true;
+            for (int i = 0; i < playersDB.size() - 1; i++) {
+                if (playersDB.get(i).getPosition() > playersDB.get(i+1).getPosition()) {
+                    temp = playersDB.get(i);
+                    playersDB.set(i, playersDB.get(i+1));
+                    playersDB.set(i+1, temp);
+                    sorted = false;
+                }
+            }
+        }
     }
 }

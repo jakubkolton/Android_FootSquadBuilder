@@ -3,7 +3,7 @@
     <string name="fut_card_name">Nazwisko</string>
     <string name="fut_card_position">Poz</string>
     <string name="fut_card_score">Ocena</string>
-    <string name="title_activity_home">Home_Activity</string>
+    <string name="title_activity_home">Losowanie zawodników</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
