@@ -15,6 +15,6 @@ Gra polegająca na losowaniu 10 piłkarzy, z których należy ułożyć jak najl
     https://github.com/Wszymanski987
 
 ### Zrzuty ekranu z działania aplikacji:
-<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/FootSquadBuilder/Screenshots/1.PNG"/>
-<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/FootSquadBuilder/Screenshots/2.PNG"/>
-<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/FootSquadBuilder/Screenshots/3.PNG"/>
+<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/Screenshots/1.PNG" height="500"/>
+<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/Screenshots/2.PNG" height="500"/>
+<img src="https://github.com/jakubkolton/Android_FootSquadBuilder/blob/Release-v1.0/Screenshots/3.PNG" height="500"/>
